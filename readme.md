@@ -1,3 +1,16 @@
+This is a modified version of Jcw87's c2-sans-fight, except with harder attacks.
+If you want to see any changes, please go to the gh-pages branch. I don't have Construct 2, so I'm not updating this branch. All I did was change the attacks, change some text... and clobber the "Infinite Loop Detected" function. So that's that.
+
+
+
+
+
+
+
+
+
+
+
 # Bad Time Simulator (Sans Fight)
 This project is a clone of the sans fight from [Undertale](http://undertale.com/).
 It was made with [Construct 2](https://www.scirra.com/construct2).
