@@ -1,0 +1,1 @@
+This is a modified version of Jcw87's c2-sans-fight, except with harder attacks. All I did was change the attacks, change some text... and clobber the "Infinite Loop Detected" function. So that's that.
