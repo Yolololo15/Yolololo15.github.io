@@ -1,16 +1,15 @@
-﻿<!DOCTYPE html>
-<html manifest="offline.appcache">
+<!DOCTYPE html>
+<html lang=en manifest="offline.appcache">
 <head>
     <meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Bad Time Simulator (Sans Fight)</title>
-	<meta name="description" content="do you wanna have a bad time? 'cause if you visit this page... you are REALLY not going to like what happens next." />
 	
 	<!-- Standardised web app manifest -->
 	<link rel="manifest" href="appmanifest.json" />
 	
 	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta content="width=device-width, initial-scale=1" name=viewport>
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
@@ -21,7 +20,7 @@
 	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
 
     <!-- All margins and padding must be zero for the canvas to fill the screen. -->
-	<style type="text/css">
+	<style>
 		* {
 			padding: 0;
 			margin: 0;
@@ -33,8 +32,7 @@
 			touch-action: none;
 			-ms-touch-action: none;
 		}
-		canvas {
-			touch-action-delay: none;
+		canvas {			
 			touch-action: none;
 			-ms-touch-action: none;
 		}
