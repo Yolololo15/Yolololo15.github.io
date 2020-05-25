@@ -1,0 +1,11 @@
+0,SET,LoopVar,10,
+0,SansText,The lines 5 to 7 are the code inside the cycle
+0,SansText,Iterating 10 times,,
+0,JMPZ,8,$LoopVar,
+0,SUB,LoopVar,$LoopVar,1
+0,SansText,Iterations left:,,
+0,SansText,$LoopVar,,
+0,JMPABS,3,,
+0,SansText,No iterations left,,
+0,SansText,Cycle completed,,
+0,EndAttack,,,
