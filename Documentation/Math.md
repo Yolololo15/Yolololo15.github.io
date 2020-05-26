@@ -1,7 +1,7 @@
 # Math
 If your attack need to do some math stuff with variables, there are a lot of functions that you can use in order to make it work
 
-If you need to acces the value of a variable, it can be called with the '$' prefix, e.g. $MyVar will return the value that MyVar has.
+If you need to access the value of a variable, it can be called with the '$' prefix, e.g. $MyVar will return the value that MyVar has.
 
 ### SET ###
 Sets a variable to a value
@@ -17,59 +17,59 @@ Adds two numbers and stores the result in a variable
 * Value2
 
 ### SUB ###
-Substracts two numbers and stores the result on a variable
+Substracts two numbers and stores the result in a variable
 
 * VariableName
 * Value1
 * Value2
 
 ### MUL ###
-Multiplies two numbers and stores the result on a variable
+Multiplies two numbers and stores the result in a variable
 
 * VariableName
 * Value1
 * Value2
 
 ### DIV ### 
-Divides two numbers and stores the floating-point result on a variable.
+Divides two numbers and stores the floating-point result in a variable.
 
 * VariableNumber
 * Value1
 * Value2
 
 ### MOD ###
-Gets the module of two numbers and stores the result on a variable
+Gets the module of two numbers and stores the result in a variable
 
 * VariableNumber
 * Value1
 * Value2
 
 ### FLOOR ###
-Stores on a variable the largest integer less than or equal to a given number
+Stores in a variable the largest integer less than or equal to a given number
 
 * VariableName
 * DecimalValue
 
 ### DEG ###
-Converts radians to degrees and sotres the result on a variable
+Converts radians to degrees and stores the result in a variable
 
 * VariableName
 * RadianValue
 
 ### RAD ###
-Converts degrees  to radians and stores the result on a variable
+Converts degrees  to radians and stores the result in a variable
 
 * VariableName
 * DegreeValue
 
 ### SIN ###
-Calculates the sine function for an angle in degrees and stores the result on a variable
+Calculates the sine function for an angle in degrees and st0res the result in a variable
 
 * VariableName
 * DegreeValue
 
 ### COS ###
-Calculates the cosine function for an angle in degrees and stores the result on a variable
+Calculates the cosine function for an angle in degrees and stores the result in a variable
 
 * VariableName
 * DegreeValue

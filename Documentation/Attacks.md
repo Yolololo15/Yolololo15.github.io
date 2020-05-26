@@ -73,7 +73,8 @@ Creates many vertical bones
 ### SineBones ###
 > Created out of laziness, probably shouldn't use.
 
-<!-- TODO: What it does? -->
+Creates a series of bones that leaves a sine-wave gap in between them.
+
 * Count
 * Spacing
 * Speed

@@ -33,27 +33,27 @@ Jump to a line if the test values are not equal.
 * TestValue2
 
 ### JMPL (Jump if less) ###
-Jump to a line if the first test value is less than the seconf test value
+Jump to a line if the first test value is less than the second test value
 * AbsoluteLineNumber
 * TestValue1
 * TestValue2
 
 ### JMPNL (Jump if not less) ###
-Jump to a line if the first test value is not less than the seconf test value
+Jump to a line if the first test value is not less than the second test value
 * AbsoluteLineNumber
 * TestValue1
 * TestValue2
 
 
 ### JMPG (Jump if greater) ###
-Jump to a line if the first test value is less than the seconf test value
+Jump to a line if the first test value is less than the second test value
 * AbsoluteLineNumber
 * TestValue1
 * TestValue2
 
 
 ### JMPG (Jump if not greater) ###
-Jump to a line if the first test value is less than the seconf test value
+Jump to a line if the first test value is less than the second test value
 * AbsoluteLineNumber
 * TestValue1
 * TestValue2

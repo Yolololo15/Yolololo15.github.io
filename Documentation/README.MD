@@ -11,4 +11,4 @@ Custom attacks are wirten in a *.csv file
 * [Programming language things](Programming.md)
 * [Combat zone behaviors](Combat.md)
 
-I suggest to write the attack on an Excel-like program and save it to a csv, instead of hand-making the csv file.
+I suggest to write the attack on an spreadsheet software like Excel or LibreOffice and save it to a csv, instead of hand-making the csv file.

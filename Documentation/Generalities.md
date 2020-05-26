@@ -30,4 +30,3 @@ Ends the attack allowing the game to continue.
 This must be called, or the attack will never end.
 
 * NO ARGUMENTS
-* 

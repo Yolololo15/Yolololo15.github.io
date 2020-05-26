@@ -16,7 +16,7 @@ Show one of the torso animations (Default, Shrug)
 * AnimationName
 
 ### Sans Head ###
-Show one of the head animations (Default, LookLeft, Wink, ClosedEyes, NoEyes, BlueEye, Tired1, Tired 2)
+Show one of the head animations (Default, LookLeft, Wink, ClosedEyes, NoEyes, BlueEye, Tired1, Tired2)
 
 * AnimationName
 
