@@ -2,6 +2,9 @@
 Some attacks needs to jump to other lines for them to work.
 There are commands to provide this functionalities.
 
+### Labels ###
+For a more intuitive development, you can label lines with the ":" prefix, so you can know what is the line that you want to jump in
+
 ### JMPABS (Jump absolute) ###
 Jump to a specific line on the attack
 * AbsoluteLineNumber
