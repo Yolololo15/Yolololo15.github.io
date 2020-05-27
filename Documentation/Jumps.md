@@ -3,14 +3,14 @@ Some attacks needs to jump to other lines for them to work.
 There are commands to provide this functionalities.
 
 ### Labels ###
-For a more intuitive development, you can label lines with the ":" prefix, so you can know what is the line that you want to jump in
+You can create a label instead of calling a function by putting the desired label name in colum 2 and prefixing it with ":", so you can know what does that line. This can be a little confusing se [here](Examples/Labels.csv) is an example of how to use it.
 
 ### JMPABS (Jump absolute) ###
 Jump to a specific line on the attack
 * AbsoluteLineNumber
 
 ### JMPREL (Jump relative) ###
-Jump to a line number relative to the current one. Note that this command jumps only forward.
+Jump to a line number relative to the current one. Positive numbers jump forward, and negative numbers jump backward
 * RelativeLineNumber
 
 ### JMPZ (Jump zero) ###

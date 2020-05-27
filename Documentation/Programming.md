@@ -4,7 +4,7 @@ Some attacks need to do things like [line jumps](Jumps.md), [math operations](Ma
 
 ## Advanced structures examples ##
 [Loops](Examples/Loops.csv)
-[Lables](Examples/Lables.csv)
+[Labels](Examples/Labels.csv)
 
 <!-- TODO: Add more advanced structures (if they're available) -->
 

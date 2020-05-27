@@ -38,7 +38,7 @@ Divides two numbers and stores the floating-point result in a variable.
 * Value2
 
 ### MOD ###
-Gets the module of two numbers and stores the result in a variable
+Gets the modulo of two numbers and stores the result in a variable
 
 * VariableNumber
 * Value1
@@ -63,7 +63,7 @@ Converts degrees  to radians and stores the result in a variable
 * DegreeValue
 
 ### SIN ###
-Calculates the sine function for an angle in degrees and st0res the result in a variable
+Calculates the sine function for an angle in degrees and stores the result in a variable
 
 * VariableName
 * DegreeValue

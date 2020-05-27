@@ -1,5 +1,5 @@
 0,SET,LoopVar,10,
-0,SansText,The lines 5 to 7 are the code inside the cycle,,
+0,SansText,The lines 5 to 7 are the code inside the loop,,
 0,SansText,Iterating 10 times,,
 0,:StartLoop,,,
 0,JMPZ,EndLoop,$LoopVar,
