@@ -504,10 +504,6 @@
                             <param id="2" name="X">0</param>
                             <param id="3" name="Y">32</param>
                         </action>
-                        <action id="-7" name="Set size" sid="630801790597157" type="DefaultFont">
-                            <param id="0" name="Width">640</param>
-                            <param id="1" name="Height">32</param>
-                        </action>
                         <action id="2" name="Set scale" sid="849064880823009" type="DefaultFont">
                             <param id="0" name="Scale">2</param>
                         </action>
@@ -520,6 +516,10 @@
                         <action id="0" name="Call function" sid="646372684188044" type="Function">
                             <param id="0" name="Name">&quot;InflateMusicMenu&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-7" name="Set size" sid="698282710040703" type="DefaultFont">
+                            <param id="0" name="Width">640</param>
+                            <param id="1" name="Height">32</param>
                         </action>
                     </actions>
                 </event-block>
@@ -574,7 +574,7 @@
                             <param id="0" name="Variable">MUSIC</param>
                             <param id="1" name="Value">MUSIC ? 0 : 1</param>
                         </action>
-                        <action id="6" name="Pop" sid="141666213716972" type="MenuStack">
+                        <action id="6" name="Pop" sid="596169945173924" type="MenuStack">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Axis">0</param>
                         </action>
