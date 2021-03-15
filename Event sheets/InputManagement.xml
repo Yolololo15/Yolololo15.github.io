@@ -358,6 +358,30 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="309707349194850">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="111808787882335" type="Keyboard">
+                                    <param id="0" name="Key">86</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Set master volume" sid="210115339531550" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume - 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="362634464076354">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="837677828931780" type="Keyboard">
+                                    <param id="0" name="Key">66</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Set master volume" sid="189796149482971" type="Audio">
+                                    <param id="0" name="dB">Audio.MasterVolume + 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="726194741738483" title="Touch">
