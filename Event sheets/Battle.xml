@@ -7825,6 +7825,36 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="530186312537819">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="779467253681919" type="Attack9Patch">
+                            <param id="0" name="Instance variable">Color</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="184561813924332" type="Attack9Patch">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Tint&quot;</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="840899819392304" type="Attack9Patch">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="282277725820753" type="Attack9Patch">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">62.74</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="466145817530926" type="Attack9Patch">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">25.09</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="6954706747497658">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="4220182392469211" type="System">
@@ -8038,6 +8068,39 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-10" name="Set value" sid="1239968244827995" type="Attack9Patch">
+                                                    <param id="0" name="Instance variable">Karma</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="336622092866585">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="789061967124882" type="Attack9Patch">
+                                            <param id="0" name="Instance variable">Color</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition behavior="CustomMovement" id="0" inverted="1" name="Is moving" sid="112155524614588" type="PlayerHeart" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="523205573026744" type="Function">
+                                            <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
+                                            <param id="1" name="Parameter {n}">Attack9Patch.Damage{###}Attack9Patch.Karma</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="346193478372130">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="125447283288677" type="Attack9Patch">
+                                                    <param id="0" name="Instance variable">Karma</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="422680399601325" type="Attack9Patch">
                                                     <param id="0" name="Instance variable">Karma</param>
                                                     <param id="1" name="Value">2</param>
                                                 </action>
