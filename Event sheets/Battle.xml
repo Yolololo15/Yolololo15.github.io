@@ -3323,7 +3323,7 @@
                                         </condition>
                                         <condition id="-8" name="Compare two values" sid="4936951010066247" type="System">
                                             <param id="0" name="First value">PlayerHeart.BBoxLeft</param>
-                                            <param id="1" name="Comparison">3</param>
+                                            <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">Platform1.BBoxRight-2</param>
                                         </condition>
                                     </conditions>
@@ -3333,7 +3333,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="2332670214936478">
+                                <event-block sid="2332670214936478">
                                     <conditions>
                                         <condition id="-11" name="Is within angle" sid="3079885609166868" type="PlayerHeart">
                                             <param id="0" name="Within">0.5</param>
@@ -3350,7 +3350,7 @@
                                         </condition>
                                         <condition id="-8" name="Compare two values" sid="5875812123797508" type="System">
                                             <param id="0" name="First value">PlayerHeart.BBoxTop</param>
-                                            <param id="1" name="Comparison">3</param>
+                                            <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Second value">Platform1.BBoxBottom-2</param>
                                         </condition>
                                     </conditions>
@@ -4381,7 +4381,7 @@
                                                 </action>
                                             </actions>
                                         </event-block>
-                                        <event-block disabled="1" sid="6626973457028389">
+                                        <event-block sid="6626973457028389">
                                             <conditions>
                                                 <condition id="-11" name="Is within angle" sid="7161194949054743" type="PlayerHeart">
                                                     <param id="0" name="Within">0.5</param>
