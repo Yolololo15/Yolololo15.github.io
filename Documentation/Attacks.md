@@ -9,7 +9,7 @@ An integer from 0 to 3. 0 is East, each increment is 90 degrees clockwise.
 Pixels per second. Multiply an original Undertale value with 30 (FPS) to get its equivalent.
 
 ### Color ###
-0 for white, 1 for blue. Other colors (such as orange) may or may not be added in the future
+0 for white, 1 for blue, 2 for orange. Other colors may or may not be added in the future
 
 ### Time ###
 Seconds
