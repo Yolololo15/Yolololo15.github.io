@@ -4125,6 +4125,7 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>Handle gravity</comment>
                         <event-block sid="2889909639663593">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="1006797283101212" type="System">
@@ -4222,6 +4223,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>Sideways movement when gravity is left or right</comment>
                         <event-block any="1" sid="5501495930111006">
                             <conditions>
                                 <condition id="-11" name="Is within angle" sid="4779713263158662" type="PlayerHeart">
@@ -4309,6 +4311,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>Sideways movement when gravity is up or down</comment>
                         <event-block any="1" sid="381865873108478">
                             <conditions>
                                 <condition id="-11" name="Is within angle" sid="6299557429759355" type="PlayerHeart">
@@ -4349,6 +4352,10 @@
                                                     <param id="0" name="Within">0.5</param>
                                                     <param id="1" name="Angle">90</param>
                                                 </condition>
+                                                <condition id="-2" name="Compare Y" sid="255143494575164" type="Platform1">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="Y co-ordinate">PlayerHeart.Y</param>
+                                                </condition>
                                                 <condition id="-8" name="Compare two values" sid="2135165409665577" type="System">
                                                     <param id="0" name="First value">PlayerHeart.CustomMovement.dy</param>
                                                     <param id="1" name="Comparison">5</param>
@@ -4380,6 +4387,10 @@
                                                     <param id="0" name="Within">0.5</param>
                                                     <param id="1" name="Angle">270</param>
                                                 </condition>
+                                                <condition id="-2" name="Compare Y" sid="299847363515336" type="Platform1">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="Y co-ordinate">PlayerHeart.Y</param>
+                                                </condition>
                                                 <condition id="-8" name="Compare two values" sid="7133537478811266" type="System">
                                                     <param id="0" name="First value">PlayerHeart.CustomMovement.dy</param>
                                                     <param id="1" name="Comparison">3</param>
@@ -4401,7 +4412,7 @@
                                                     <param id="1" name="Speed">Platform1.CustomMovement.dy</param>
                                                 </action>
                                                 <action id="-2" name="Set Y" sid="6922361484113858" type="PlayerHeart">
-                                                    <param id="0" name="Y">Platform1.BBoxTop + 8.05</param>
+                                                    <param id="0" name="Y">Platform1.BBoxBottom + 8.05</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -7800,12 +7811,12 @@
                         <action id="-28" name="Set effect parameter" sid="1671610681247615" type="Attack9Patch">
                             <param id="0" name="Effect">&quot;Tint&quot;</param>
                             <param id="1" name="Parameter index">0</param>
-                            <param id="2" name="Value">0</param>
+                            <param id="2" name="Value">7.84</param>
                         </action>
                         <action id="-28" name="Set effect parameter" sid="2655109807164018" type="Attack9Patch">
                             <param id="0" name="Effect">&quot;Tint&quot;</param>
                             <param id="1" name="Parameter index">1</param>
-                            <param id="2" name="Value">66</param>
+                            <param id="2" name="Value">66.27</param>
                         </action>
                         <action id="-28" name="Set effect parameter" sid="1797174504372617" type="Attack9Patch">
                             <param id="0" name="Effect">&quot;Tint&quot;</param>
