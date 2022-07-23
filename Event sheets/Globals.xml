@@ -13,9 +13,9 @@
         <variable constant="0" name="EndlessStage" sid="1966297049622465" static="0" type="number">0</variable>
         <variable constant="0" name="PracticeTarget" sid="824857649224256" static="0" type="number">60</variable>
         <variable constant="0" name="SingleAttack" sid="9637412728316299" static="0" type="text"></variable>
-        <variable constant="0" name="Name" sid="8522084662131715" static="0" type="text">Chara</variable>
-        <variable constant="0" name="HP" sid="4067313995094888" static="0" type="number">92</variable>
-        <variable constant="0" name="MaxHP" sid="2742940924955148" static="0" type="number">92</variable>
+        <variable constant="0" name="Name" sid="8522084662131715" static="0" type="text">Spamton</variable>
+        <variable constant="0" name="HP" sid="4067313995094888" static="0" type="number">1997</variable>
+        <variable constant="0" name="MaxHP" sid="2742940924955148" static="0" type="number">1997</variable>
         <variable constant="0" name="KR" sid="2189987320058474" static="0" type="number">0</variable>
         <variable constant="0" name="KR_T" sid="8948293770944489" static="0" type="number">0</variable>
     </events>
