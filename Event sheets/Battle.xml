@@ -1259,7 +1259,7 @@
                             <actions>
                                 <action id="-10" name="Set value" sid="5244377573294855" type="CombatZone">
                                     <param id="0" name="Instance variable">InfoText</param>
-                                    <param id="1" name="Value">&quot;* You feel like you&apos;re going to&quot; &amp; newline &amp; &quot;  have a bad time.&quot;</param>
+                                    <param id="1" name="Value">&quot;* It feels like I&apos;'m' going to&quot; &amp; newline &amp; &quot;  have a horrible time.&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
