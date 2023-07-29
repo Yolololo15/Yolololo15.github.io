@@ -2300,6 +2300,21 @@
                         <variable constant="0" name="X" sid="831689070335536" static="0" type="number">0</variable>
                         <variable constant="0" name="Y" sid="243059583337533" static="0" type="number">0</variable>
                         <variable constant="0" name="Text" sid="785327950664429" static="0" type="text"></variable>
+                        <event-block sid="742535640295667">
+                            <conditions>
+                                <condition id="7" name="Compare size" sid="615881203655612" type="PlayerItems">
+                                    <param id="0" name="Axis">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Pop" sid="273281429820039" type="MenuStack">
+                                    <param id="0" name="Where">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="691393088852222">
                             <conditions>
                                 <condition id="7" name="Compare size" sid="514578272185741" type="PlayerItems">
