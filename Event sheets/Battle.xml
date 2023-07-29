@@ -3115,7 +3115,7 @@
                                 <action id="-28" name="Set effect parameter" sid="1224258952403967" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">25</param>
+                                    <param id="2" name="Value">23.53</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="9069255816298874" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
