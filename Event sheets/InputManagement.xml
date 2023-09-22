@@ -398,27 +398,27 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-3" name="Create object" sid="375818885423135" type="System">
-                                                    <param id="0" name="Object to create">DefaultFont</param>
+                                                    <param id="0" name="Object to create">UndyneFont</param>
                                                     <param id="1" name="Layer">&quot;Touch&quot;</param>
                                                     <param id="2" name="X">16</param>
                                                     <param id="3" name="Y">400</param>
                                                 </action>
-                                                <action id="-10" name="Set value" sid="222893444387848" type="DefaultFont">
+                                                <action id="-10" name="Set value" sid="222893444387848" type="UndyneFont">
                                                     <param id="0" name="Instance variable">Name</param>
                                                     <param id="1" name="Value">&quot;MobileWarn&quot;</param>
                                                 </action>
-                                                <action id="-10" name="Set value" sid="312368363882614" type="DefaultFont">
+                                                <action id="-10" name="Set value" sid="312368363882614" type="UndyneFont">
                                                     <param id="0" name="Instance variable">Timeout</param>
                                                     <param id="1" name="Value">3</param>
                                                 </action>
-                                                <action id="-7" name="Set size" sid="327090629639428" type="DefaultFont">
+                                                <action id="-7" name="Set size" sid="327090629639428" type="UndyneFont">
                                                     <param id="0" name="Width">512</param>
                                                     <param id="1" name="Height">80</param>
                                                 </action>
-                                                <action id="2" name="Set scale" sid="946531600717532" type="DefaultFont">
+                                                <action id="2" name="Set scale" sid="946531600717532" type="UndyneFont">
                                                     <param id="0" name="Scale">2</param>
                                                 </action>
-                                                <action id="0" name="Set text" sid="989636852540768" type="DefaultFont">
+                                                <action id="0" name="Set text" sid="989636852540768" type="UndyneFont">
                                                     <param id="0" name="Text">&quot;Don&apos;t play on mobile!&quot; &amp; newline &amp; &quot;You have been warned!&quot;</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="713870393895474" type="System">

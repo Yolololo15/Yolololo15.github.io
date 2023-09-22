@@ -270,6 +270,111 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="399294083621564">
+                    <conditions>
+                        <condition id="0" name="On function" sid="636799169792331" type="Function">
+                            <param id="0" name="Name">&quot;UndyneText&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="888045966771405" type="System">
+                            <param id="0" name="Object to create">SpeechBubble</param>
+                            <param id="1" name="Layer">&quot;Enemies&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="473467616022563" type="SpeechBubble">
+                            <param id="0" name="X">SansLegs.X + 64</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="263588128954958" type="SpeechBubble">
+                            <param id="0" name="Y">SansLegs.Y - 128</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="847457127208448" type="System">
+                            <param id="0" name="Object to create">UndyneFont</param>
+                            <param id="1" name="Layer">&quot;Enemies&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="842720666113258" type="UndyneFont">
+                            <param id="0" name="X">SpeechBubble.X + 32</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="132050228011607" type="UndyneFont">
+                            <param id="0" name="Y">SpeechBubble.Y + 16</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="760606405965411" type="UndyneFont">
+                            <param id="0" name="Width">256</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="422340838154930" type="UndyneFont">
+                            <param id="0" name="Height">64</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="174982288917127" type="UndyneFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="294496002844584" type="UndyneFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="937084927269474" type="UndyneFont">
+                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="458289625856019" type="UndyneFont">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="597283863794219" type="UndyneFont">
+                            <param id="0" name="Instance variable">Voice</param>
+                            <param id="1" name="Value">&quot;UndyneSpeak&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="973044519680978" type="UndyneFont">
+                            <param id="0" name="Instance variable">FullText</param>
+                            <param id="1" name="Value">Function.Param(0)</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="706913713216370" type="UndyneFont">
+                            <param id="0" name="Instance variable">Interactive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="744261505700559" type="Function">
+                            <param id="0" name="Name">&quot;TLPause&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="369418321665779">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="728075124150745" type="Function">
+                                    <param id="0" name="Index">1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="435515530601869" type="UndyneFont">
+                                    <param id="0" name="Instance variable">EndFunc</param>
+                                    <param id="1" name="Value">&quot;EndUndyneText&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="970548678400420">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="671199671341174" type="Function">
+                                    <param id="0" name="Index">1</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="378513194156132" type="UndyneFont">
+                                    <param id="0" name="Instance variable">EndFunc</param>
+                                    <param id="1" name="Value">Function.Param(1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="9808369736759165">
                     <conditions>
                         <condition id="-18" name="On created" sid="6643684039535598" type="SpeechBubble" />
@@ -291,6 +396,20 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="1037245862595152" type="SpeechBubble" />
                         <action id="0" name="Call function" sid="786833740848337" type="Function">
+                            <param id="0" name="Name">&quot;TLResume&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="271704270696905">
+                    <conditions>
+                        <condition id="0" name="On function" sid="723505448840561" type="Function">
+                            <param id="0" name="Name">&quot;EndUndyneText&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="215891922071697" type="SpeechBubble" />
+                        <action id="0" name="Call function" sid="474152672632273" type="Function">
                             <param id="0" name="Name">&quot;TLResume&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>

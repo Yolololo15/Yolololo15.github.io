@@ -110,7 +110,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Preload" sid="1634811247740819" type="Audio">
-                            <param id="0" name="Audio file">mus_zz_megalovania</param>
+                            <param id="0" name="Audio file">mus_zz_battleagainstatruehero</param>
                         </action>
                     </actions>
                 </event-block>
@@ -124,7 +124,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="4080759880781125" type="Audio">
-                            <param id="0" name="Audio file">mus_zz_megalovania</param>
+                            <param id="0" name="Audio file">mus_zz_battleagainstatruehero</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
@@ -353,7 +353,7 @@
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
                                         <action id="0" name="Play" sid="687530192848918" type="Audio">
-                                            <param id="0" name="Audio file">mus_zz_megalovania</param>
+                                            <param id="0" name="Audio file">mus_zz_battleagainstatruehero</param>
                                             <param id="2" name="Loop">1</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
@@ -1173,6 +1173,18 @@
                     <param id="0" name="Layer">&quot;Overlay&quot;</param>
                     <param id="1" name="Mode">1</param>
                 </action>
+                <action id="-15" name="Set visible" sid="637241711794193" type="Blocker">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="917541837328732" type="GreenCircle">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="176585846807396" type="Blocker">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="774731308596178" type="GreenCircle">
+                    <param id="0" name="Collisions">0</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="2362615410620619">
@@ -1259,7 +1271,7 @@
                             <actions>
                                 <action id="-10" name="Set value" sid="5244377573294855" type="CombatZone">
                                     <param id="0" name="Instance variable">InfoText</param>
-                                    <param id="1" name="Value">&quot;* You feel like you&apos;re going to&quot; &amp; newline &amp; &quot;  have a bad time.&quot;</param>
+                                    <param id="1" name="Value">&quot;* The heroine appears.&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -1271,7 +1283,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="3571287415179704" type="Audio">
-                                            <param id="0" name="Audio file">mus_zz_megalovania</param>
+                                            <param id="0" name="Audio file">mus_zz_battleagainstatruehero</param>
                                             <param id="2" name="Loop">1</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
@@ -1702,7 +1714,7 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="4871016202786797" type="MenuItem" />
-                                <action id="-9" name="Destroy" sid="3501512135482582" type="DefaultFont" />
+                                <action id="-9" name="Destroy" sid="3501512135482582" type="UndyneFont" />
                                 <action id="0" name="Call function" sid="2013543461201569" type="Function">
                                     <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
                                     <param id="1" name="Parameter {n}">&quot;&quot;</param>
@@ -1712,26 +1724,26 @@
                                     <param id="1" name="Value">2</param>
                                 </action>
                                 <action id="-3" name="Create object" sid="5066171669311235" type="System">
-                                    <param id="0" name="Object to create">DefaultFont</param>
+                                    <param id="0" name="Object to create">UndyneFont</param>
                                     <param id="1" name="Layer">&quot;CombatZone&quot;</param>
                                     <param id="2" name="X">48</param>
                                     <param id="3" name="Y">272</param>
                                 </action>
-                                <action id="-7" name="Set size" sid="7869898738280204" type="DefaultFont">
+                                <action id="-7" name="Set size" sid="7869898738280204" type="UndyneFont">
                                     <param id="0" name="Width">544</param>
                                     <param id="1" name="Height">96</param>
                                 </action>
-                                <action id="2" name="Set scale" sid="6733110494252138" type="DefaultFont">
+                                <action id="2" name="Set scale" sid="6733110494252138" type="UndyneFont">
                                     <param id="0" name="Scale">2</param>
                                 </action>
-                                <action id="0" name="Set text" sid="6965892442098992" type="DefaultFont">
+                                <action id="0" name="Set text" sid="6965892442098992" type="UndyneFont">
                                     <param id="0" name="Text">&quot;&quot;</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="5835545420556264" type="DefaultFont">
+                                <action id="-10" name="Set value" sid="5835545420556264" type="UndyneFont">
                                     <param id="0" name="Instance variable">FullText</param>
                                     <param id="1" name="Value">CombatZone.InfoText</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="555423261791026" type="DefaultFont">
+                                <action id="-10" name="Set value" sid="555423261791026" type="UndyneFont">
                                     <param id="0" name="Instance variable">Name</param>
                                     <param id="1" name="Value">&quot;InfoText&quot;</param>
                                 </action>
@@ -1847,7 +1859,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="6880014801936653" type="MenuItem" />
-                        <action id="-9" name="Destroy" sid="7180918704272833" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="7180918704272833" type="UndyneFont" />
                         <action id="0" name="Call function" sid="8697772466055087" type="Function">
                             <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;MenuBattle&quot;</param>
@@ -1870,7 +1882,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="2505710701175432" type="MenuItem" />
-                        <action id="-9" name="Destroy" sid="2495747864607295" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="2495747864607295" type="UndyneFont" />
                         <action id="-9" name="Set value" sid="1227979589177662" type="System">
                             <param id="0" name="Variable">MenuState</param>
                             <param id="1" name="Value">0</param>
@@ -2143,7 +2155,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="7055489516107744" type="MenuItem" />
-                        <action id="-9" name="Destroy" sid="5911009930611075" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="5911009930611075" type="UndyneFont" />
                         <action id="0" name="Call function" sid="6408759864074876" type="Function">
                             <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;MenuBattle&quot;</param>
@@ -2166,7 +2178,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="3469618219357269" type="MenuItem" />
-                        <action id="-9" name="Destroy" sid="6879063204349359" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="6879063204349359" type="UndyneFont" />
                         <action id="0" name="Call function" sid="9898822667382134" type="Function">
                             <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;MenuAct&quot;</param>
@@ -2189,40 +2201,40 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="9655043778862738" type="MenuItem" />
-                        <action id="-9" name="Destroy" sid="9438899527612639" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="9438899527612639" type="UndyneFont" />
                         <action id="-9" name="Set value" sid="2620726080634939" type="System">
                             <param id="0" name="Variable">MenuState</param>
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-3" name="Create object" sid="2662309208083313" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
+                            <param id="0" name="Object to create">UndyneFont</param>
                             <param id="1" name="Layer">&quot;CombatZone&quot;</param>
                             <param id="2" name="X">48</param>
                             <param id="3" name="Y">272</param>
                         </action>
-                        <action id="-7" name="Set size" sid="7750985060116913" type="DefaultFont">
+                        <action id="-7" name="Set size" sid="7750985060116913" type="UndyneFont">
                             <param id="0" name="Width">544</param>
                             <param id="1" name="Height">96</param>
                         </action>
-                        <action id="2" name="Set scale" sid="114711987025923" type="DefaultFont">
+                        <action id="2" name="Set scale" sid="114711987025923" type="UndyneFont">
                             <param id="0" name="Scale">2</param>
                         </action>
-                        <action id="0" name="Set text" sid="4205585603188199" type="DefaultFont">
+                        <action id="0" name="Set text" sid="4205585603188199" type="UndyneFont">
                             <param id="0" name="Text">&quot;&quot;</param>
                         </action>
-                        <action id="-10" name="Set value" sid="8302002307835332" type="DefaultFont">
+                        <action id="-10" name="Set value" sid="8302002307835332" type="UndyneFont">
                             <param id="0" name="Instance variable">FullText</param>
                             <param id="1" name="Value">&quot;* SANS 1 ATK 1 DEF&quot; &amp; newline &amp; &quot;* The easiest enemy.&quot; &amp; newline &amp; &quot;* Can only deal 1 damage.&quot;</param>
                         </action>
-                        <action id="-10" name="Set value" sid="7783602027376122" type="DefaultFont">
+                        <action id="-10" name="Set value" sid="7783602027376122" type="UndyneFont">
                             <param id="0" name="Instance variable">Name</param>
                             <param id="1" name="Value">&quot;InfoText&quot;</param>
                         </action>
-                        <action id="-10" name="Set value" sid="7245588627868631" type="DefaultFont">
+                        <action id="-10" name="Set value" sid="7245588627868631" type="UndyneFont">
                             <param id="0" name="Instance variable">EndFunc</param>
                             <param id="1" name="Value">&quot;StartAttack&quot;</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="695507833767016" type="DefaultFont">
+                        <action id="-13" name="Set boolean" sid="695507833767016" type="UndyneFont">
                             <param id="0" name="Instance variable">Interactive</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -2240,7 +2252,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="3340722237681074" type="DefaultFont">
+                                <action id="-10" name="Set value" sid="3340722237681074" type="UndyneFont">
                                     <param id="0" name="Instance variable">EndFunc</param>
                                     <param id="1" name="Value">&quot;MenuCheckSans2&quot;</param>
                                 </action>
@@ -2256,34 +2268,34 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="9921004734970456" type="System">
-                            <param id="0" name="Object to create">DefaultFont</param>
+                            <param id="0" name="Object to create">UndyneFont</param>
                             <param id="1" name="Layer">&quot;CombatZone&quot;</param>
                             <param id="2" name="X">48</param>
                             <param id="3" name="Y">272</param>
                         </action>
-                        <action id="-7" name="Set size" sid="1852508439781489" type="DefaultFont">
+                        <action id="-7" name="Set size" sid="1852508439781489" type="UndyneFont">
                             <param id="0" name="Width">544</param>
                             <param id="1" name="Height">96</param>
                         </action>
-                        <action id="2" name="Set scale" sid="4438216182801967" type="DefaultFont">
+                        <action id="2" name="Set scale" sid="4438216182801967" type="UndyneFont">
                             <param id="0" name="Scale">2</param>
                         </action>
-                        <action id="0" name="Set text" sid="9414362141358894" type="DefaultFont">
+                        <action id="0" name="Set text" sid="9414362141358894" type="UndyneFont">
                             <param id="0" name="Text">&quot;&quot;</param>
                         </action>
-                        <action id="-10" name="Set value" sid="7697488528991464" type="DefaultFont">
+                        <action id="-10" name="Set value" sid="7697488528991464" type="UndyneFont">
                             <param id="0" name="Instance variable">FullText</param>
                             <param id="1" name="Value">&quot;* Can&apos;t keep dodging forever.&quot; &amp; newline &amp; &quot;* Keep attacking.&quot;</param>
                         </action>
-                        <action id="-10" name="Set value" sid="1065982881486434" type="DefaultFont">
+                        <action id="-10" name="Set value" sid="1065982881486434" type="UndyneFont">
                             <param id="0" name="Instance variable">Name</param>
                             <param id="1" name="Value">&quot;InfoText&quot;</param>
                         </action>
-                        <action id="-10" name="Set value" sid="7370334323802911" type="DefaultFont">
+                        <action id="-10" name="Set value" sid="7370334323802911" type="UndyneFont">
                             <param id="0" name="Instance variable">EndFunc</param>
                             <param id="1" name="Value">&quot;StartAttack&quot;</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="1593059177039637" type="DefaultFont">
+                        <action id="-13" name="Set boolean" sid="1593059177039637" type="UndyneFont">
                             <param id="0" name="Instance variable">Interactive</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -2325,7 +2337,7 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="458686589538686" type="MenuItem" />
-                                <action id="-9" name="Destroy" sid="3019807917076695" type="DefaultFont" />
+                                <action id="-9" name="Destroy" sid="3019807917076695" type="UndyneFont" />
                                 <action id="0" name="Call function" sid="5861341751558878" type="Function">
                                     <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
                                     <param id="1" name="Parameter {n}">&quot;MenuBattle&quot;</param>
@@ -2335,22 +2347,22 @@
                                     <param id="1" name="Value">3</param>
                                 </action>
                                 <action id="-3" name="Create object" sid="6617115073471764" type="System">
-                                    <param id="0" name="Object to create">DefaultFont</param>
+                                    <param id="0" name="Object to create">UndyneFont</param>
                                     <param id="1" name="Layer">&quot;CombatZone&quot;</param>
                                     <param id="2" name="X">384</param>
                                     <param id="3" name="Y">336</param>
                                 </action>
-                                <action id="-7" name="Set size" sid="2708739099675103" type="DefaultFont">
+                                <action id="-7" name="Set size" sid="2708739099675103" type="UndyneFont">
                                     <param id="0" name="Width">256</param>
                                     <param id="1" name="Height">32</param>
                                 </action>
-                                <action id="2" name="Set scale" sid="2397875778075625" type="DefaultFont">
+                                <action id="2" name="Set scale" sid="2397875778075625" type="UndyneFont">
                                     <param id="0" name="Scale">2</param>
                                 </action>
-                                <action id="0" name="Set text" sid="8274116410221162" type="DefaultFont">
+                                <action id="0" name="Set text" sid="8274116410221162" type="UndyneFont">
                                     <param id="0" name="Text">&quot;PAGE 1&quot;</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="6081845998597264" type="DefaultFont">
+                                <action id="-10" name="Set value" sid="6081845998597264" type="UndyneFont">
                                     <param id="0" name="Instance variable">Name</param>
                                     <param id="1" name="Value">&quot;Page&quot;</param>
                                 </action>
@@ -2430,7 +2442,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="4707307213438234" type="MenuItem" />
-                        <action id="-9" name="Destroy" sid="6142302341098431" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="6142302341098431" type="UndyneFont" />
                         <action id="-15" name="Set visible" sid="9465328367494064" type="PlayerHeart">
                             <param id="0" name="Visibility">0</param>
                         </action>
@@ -2478,34 +2490,34 @@
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="-3" name="Create object" sid="6714699484739134" type="System">
-                                            <param id="0" name="Object to create">DefaultFont</param>
+                                            <param id="0" name="Object to create">UndyneFont</param>
                                             <param id="1" name="Layer">&quot;CombatZone&quot;</param>
                                             <param id="2" name="X">48</param>
                                             <param id="3" name="Y">272</param>
                                         </action>
-                                        <action id="-7" name="Set size" sid="4176880778301639" type="DefaultFont">
+                                        <action id="-7" name="Set size" sid="4176880778301639" type="UndyneFont">
                                             <param id="0" name="Width">544</param>
                                             <param id="1" name="Height">96</param>
                                         </action>
-                                        <action id="2" name="Set scale" sid="8300686202119284" type="DefaultFont">
+                                        <action id="2" name="Set scale" sid="8300686202119284" type="UndyneFont">
                                             <param id="0" name="Scale">2</param>
                                         </action>
-                                        <action id="0" name="Set text" sid="2783668341228197" type="DefaultFont">
+                                        <action id="0" name="Set text" sid="2783668341228197" type="UndyneFont">
                                             <param id="0" name="Text">&quot;&quot;</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="8525105579362746" type="DefaultFont">
+                                        <action id="-10" name="Set value" sid="8525105579362746" type="UndyneFont">
                                             <param id="0" name="Instance variable">FullText</param>
                                             <param id="1" name="Value">&quot;* You eat the &quot; &amp; ItemDB.At(ItemID, 2) &amp; &quot;.&quot; &amp;  newline &amp; &quot;* You recovered &quot; &amp; ItemDB.At(ItemID, 1) &amp; &quot; HP!&quot;</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="4979570658458923" type="DefaultFont">
+                                        <action id="-10" name="Set value" sid="4979570658458923" type="UndyneFont">
                                             <param id="0" name="Instance variable">Name</param>
                                             <param id="1" name="Value">&quot;InfoText&quot;</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="8843743648355896" type="DefaultFont">
+                                        <action id="-10" name="Set value" sid="8843743648355896" type="UndyneFont">
                                             <param id="0" name="Instance variable">EndFunc</param>
                                             <param id="1" name="Value">&quot;StartAttack&quot;</param>
                                         </action>
-                                        <action id="-13" name="Set boolean" sid="9149347642381097" type="DefaultFont">
+                                        <action id="-13" name="Set boolean" sid="9149347642381097" type="UndyneFont">
                                             <param id="0" name="Instance variable">Interactive</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
@@ -2527,7 +2539,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="8782380560236155" type="MenuItem" />
-                        <action id="-9" name="Destroy" sid="4537259580924028" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="4537259580924028" type="UndyneFont" />
                         <action id="0" name="Call function" sid="9517532625372192" type="Function">
                             <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;MenuBattle&quot;</param>
@@ -2550,7 +2562,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="6614875834860559" type="MenuItem" />
-                        <action id="-9" name="Destroy" sid="9250353767696502" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="9250353767696502" type="UndyneFont" />
                         <action id="-9" name="Set value" sid="3259281702960783" type="System">
                             <param id="0" name="Variable">MenuState</param>
                             <param id="1" name="Value">0</param>
@@ -2640,14 +2652,14 @@
                         </event-block>
                         <event-block sid="3605994392407135">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="2160425951955605" type="DefaultFont">
+                                <condition id="-7" name="Compare instance variable" sid="2160425951955605" type="UndyneFont">
                                     <param id="0" name="Instance variable">Name</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;Page&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="3088408406826475" type="DefaultFont">
+                                <action id="0" name="Set text" sid="3088408406826475" type="UndyneFont">
                                     <param id="0" name="Text">&quot;PAGE &quot; &amp; (floor(MenuStack.Back/4) + 1)</param>
                                 </action>
                             </actions>
@@ -3038,6 +3050,16 @@
                 <variable constant="1" name="HEART_JUMPHOLD_CUTOFF" sid="7658838381136613" static="0" type="number">30</variable>
                 <variable constant="0" name="HeartSpeed" sid="1915279441809349" static="0" type="number">150</variable>
                 <variable constant="0" name="MaxFallSpeed" sid="963626393445968" static="1" type="number">750</variable>
+                <variable constant="0" name="LastAngle" sid="670028417750984" static="0" type="number">0</variable>
+                <event-block sid="747573663534877">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="820029310194147" type="System">
+                            <param id="0" name="Variable">LastAngle</param>
+                            <param id="1" name="Value">LastInputtedAngle</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="4519603591679642">
                     <conditions>
                         <condition id="0" name="On function" sid="7145929990283956" type="Function">
@@ -3096,13 +3118,13 @@
                                 <condition id="-14" name="Compare variable" sid="4077061299943921" type="System">
                                     <param id="0" name="Variable">Mode</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">HEARTMODE_BLUE</param>
+                                    <param id="2" name="Value">HEARTMODE_GREEN</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="6029411188612417" type="PlayerHeart">
                                     <param id="0" name="Instance variable">Mode</param>
-                                    <param id="1" name="Value">HEARTMODE_BLUE</param>
+                                    <param id="1" name="Value">HEARTMODE_GREEN</param>
                                 </action>
                                 <action id="-8" name="Set angle" sid="4497408270605832" type="PlayerHeart">
                                     <param id="0" name="Angle">90</param>
@@ -3115,9 +3137,42 @@
                                 <action id="-28" name="Set effect parameter" sid="1224258952403967" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">23.53</param>
+                                    <param id="2" name="Value">100</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="9069255816298874" type="PlayerHeart">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">10.6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="133115872093407">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="350299572379710" type="System">
+                                    <param id="0" name="Variable">Mode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">HEARTMODE_BLUE</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="449710663366842" type="PlayerHeart">
+                                    <param id="0" name="Instance variable">Mode</param>
+                                    <param id="1" name="Value">HEARTMODE_BLUE</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="166861342955011" type="PlayerHeart">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="787951697623083" type="PlayerHeart">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="911350510924151" type="PlayerHeart">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">23.53</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="179992837764701" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">2</param>
                                     <param id="2" name="Value">100</param>
@@ -3808,6 +3863,160 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="687166252852588">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="546720826780739" type="PlayerHeart">
+                            <param id="0" name="Instance variable">Mode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">HEARTMODE_GREEN</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="524995565446134">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="855118066649604" type="VPad">
+                                    <param id="0" name="Instance variable">Up</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">VPad.Down</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="CustomMovement" id="2" name="Set speed" sid="720635275728539" type="PlayerHeart">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Speed">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="223589940975254">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="669899307264714" type="VPad">
+                                    <param id="0" name="Instance variable">Up</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">VPad.Down</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="264772289561302">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="285518775801762" type="VPad">
+                                            <param id="0" name="Instance variable">Up</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="CustomMovement" id="2" name="Set speed" sid="526528069608870" type="PlayerHeart">
+                                            <param id="0" name="Which">2</param>
+                                            <param id="1" name="Speed">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="742274837850603" type="System">
+                                            <param id="0" name="Variable">LastAngle</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="950457627008795">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="759520070313055" type="VPad">
+                                            <param id="0" name="Instance variable">Down</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="CustomMovement" id="2" name="Set speed" sid="582620480453927" type="PlayerHeart">
+                                            <param id="0" name="Which">2</param>
+                                            <param id="1" name="Speed">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="189654006194068" type="System">
+                                            <param id="0" name="Variable">LastAngle</param>
+                                            <param id="1" name="Value">180</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="826778944861744">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="924093942072108" type="VPad">
+                                    <param id="0" name="Instance variable">Left</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">VPad.Right</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="CustomMovement" id="2" name="Set speed" sid="365054870114542" type="PlayerHeart">
+                                    <param id="0" name="Which">1</param>
+                                    <param id="1" name="Speed">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="738876826608368">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="761581706791215" type="VPad">
+                                    <param id="0" name="Instance variable">Left</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">VPad.Right</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="612154369060591">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="864494609940944" type="VPad">
+                                            <param id="0" name="Instance variable">Left</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="CustomMovement" id="2" name="Set speed" sid="457126097561406" type="PlayerHeart">
+                                            <param id="0" name="Which">1</param>
+                                            <param id="1" name="Speed">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="554391135197405" type="System">
+                                            <param id="0" name="Variable">LastAngle</param>
+                                            <param id="1" name="Value">270</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="922371601784141">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="593218632288823" type="VPad">
+                                            <param id="0" name="Instance variable">Right</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="CustomMovement" id="2" name="Set speed" sid="120539223534167" type="PlayerHeart">
+                                            <param id="0" name="Which">1</param>
+                                            <param id="1" name="Speed">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="835282107370327" type="System">
+                                            <param id="0" name="Variable">LastAngle</param>
+                                            <param id="1" name="Value">90</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="315611040153002">
+                            <conditions />
+                            <actions>
+                                <action disabled="1" id="-8" name="Set angle" sid="583254623923744" type="Blocker">
+                                    <param id="0" name="Angle">LastAngle</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="551525290418741" type="System">
+                                    <param id="0" name="Variable">LastInputtedAngle</param>
+                                    <param id="1" name="Value">LastAngle</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="4272043091444084">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="2247573656404247" type="PlayerHeart">
@@ -4476,6 +4685,221 @@
                                     </sub-events>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="997604779841908" title="Arrows">
+            <sub-events>
+                <variable constant="1" name="REMAININGREDTIMER" sid="457740268355213" static="0" type="number">5</variable>
+                <variable constant="0" name="LastBlock" sid="220003267570582" static="0" type="number">0</variable>
+                <event-group description="" sid="627592356428890" title="ArrowR">
+                    <sub-events>
+                        <event-block sid="711191970330354">
+                            <conditions>
+                                <condition id="0" name="On function" sid="725392125268194" type="Function">
+                                    <param id="0" name="Name">&quot;ArrowR&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="855733359108860" type="System">
+                                    <param id="0" name="Object to create">ArrowR</param>
+                                    <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="700411075678161" type="ArrowR">
+                                    <param id="0" name="X">PlayerHeart.X + (-1 * int(Function.Param(0)))</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="217683899122400" type="ArrowR">
+                                    <param id="0" name="Y">PlayerHeart.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="710615329265019" type="ArrowR">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">DIRECTION_RIGHT</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="281057349915055" type="ArrowR">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="457692176399669" title="ArrowL">
+                    <sub-events>
+                        <event-block sid="740054319249443">
+                            <conditions>
+                                <condition id="0" name="On function" sid="165601128120763" type="Function">
+                                    <param id="0" name="Name">&quot;ArrowL&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="534342885560756" type="System">
+                                    <param id="0" name="Object to create">ArrowL</param>
+                                    <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="376434653656761" type="ArrowL">
+                                    <param id="0" name="X">PlayerHeart.X+ (int(Function.Param(0)))</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="264918731319350" type="ArrowL">
+                                    <param id="0" name="Y">PlayerHeart.Y </param>
+                                </action>
+                                <action id="-10" name="Set value" sid="326511100213593" type="ArrowL">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">DIRECTION_LEFT</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="169321278353754" type="ArrowL">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="382694384821098" title="ArrowU">
+                    <sub-events>
+                        <event-block sid="100178828208280">
+                            <conditions>
+                                <condition id="0" name="On function" sid="182622029518703" type="Function">
+                                    <param id="0" name="Name">&quot;ArrowU&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="645586538571243" type="System">
+                                    <param id="0" name="Object to create">ArrowU</param>
+                                    <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="854437083160585" type="ArrowU">
+                                    <param id="0" name="X">PlayerHeart.X</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="499780764790323" type="ArrowU">
+                                    <param id="0" name="Y">PlayerHeart.Y + int(Function.Param(0))</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="953235485067706" type="ArrowU">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">DIRECTION_UP</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="958218177962784" type="ArrowU">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="499145940051144" title="ArrowD">
+                    <sub-events>
+                        <event-block sid="343422897850593">
+                            <conditions>
+                                <condition id="0" name="On function" sid="629142591163406" type="Function">
+                                    <param id="0" name="Name">&quot;ArrowD&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="459302915186571" type="System">
+                                    <param id="0" name="Object to create">ArrowD</param>
+                                    <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="909362719266749" type="ArrowD">
+                                    <param id="0" name="X">PlayerHeart.X</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="855638027407683" type="ArrowD">
+                                    <param id="0" name="Y">PlayerHeart.Y + (-1 * int(Function.Param(0)))</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="536286369022934" type="ArrowD">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">DIRECTION_DOWN</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="853600693795340" type="ArrowD">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="376623401048801">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="504963795971239" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="945599559025314" type="ArrowSprite">
+                            <param id="0" name="Y">ArrowSprite.Y + sin(ArrowSprite.Direction*90)*dt*ArrowSprite.Speed</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="488888977517187" type="ArrowSprite">
+                            <param id="0" name="X">ArrowSprite.X + cos(ArrowSprite.Direction*90)*dt*ArrowSprite.Speed</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="114084879941452">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="365486725958909" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="263413679316656" type="ArrowSprite">
+                            <param id="0" name="Y">ArrowSprite.Y + sin(ArrowSprite.Direction*90)*dt*ArrowSprite.Speed</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="197670257644655" type="ArrowSprite">
+                            <param id="0" name="X">ArrowSprite.X + cos(ArrowSprite.Direction*90)*dt*ArrowSprite.Speed</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="125931715646864">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="243423347407696" type="System">
+                                    <param id="0" name="Variable">LastBlock</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">time-REMAININGREDTIMER</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="131378788631699" type="Blocker">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="162323831680389">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="705732189173903" type="PlayerHitbox">
+                                    <param id="0" name="Object">ArrowSprite</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="844107869453968" type="ArrowSprite" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="168054253618498">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="970801450508755" type="Blocker">
+                                    <param id="0" name="Object">ArrowSprite</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="235974218642364" type="ArrowSprite" />
+                                <action id="0" name="Play" sid="368637275799346" type="Audio">
+                                    <param id="0" name="Audio file">Ding</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="682759149785825" type="System">
+                                    <param id="0" name="Variable">LastBlock</param>
+                                    <param id="1" name="Value">time</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="530131113536569" type="Blocker">
+                                    <param id="0" name="Animation">&quot;Red&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -7875,7 +8299,7 @@
                         <condition id="-14" name="Compare variable" sid="4220182392469211" type="System">
                             <param id="0" name="Variable">LastDamageTime</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">time-0.033</param>
+                            <param id="2" name="Value">time-1</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -8006,6 +8430,19 @@
                                     </actions>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                        <event-block sid="962416896661889">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="325915737767419" type="PlayerHitbox">
+                                    <param id="0" name="Object">ArrowSprite</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="563486525064111" type="Function">
+                                    <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
+                                    <param id="1" name="Parameter {n}">12{###}0</param>
+                                </action>
+                            </actions>
                         </event-block>
                         <event-block sid="3041692031166179">
                             <conditions>
@@ -8956,6 +9393,111 @@
                             </sub-events>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <variable constant="1" name="ROTATE_SPEED" sid="369338599475471" static="0" type="number">30</variable>
+        <event-group description="" sid="938476576242042" title="PlayerBlocker">
+            <sub-events>
+                <event-block sid="288648169672846">
+                    <conditions>
+                        <condition id="0" name="On function" sid="835853329837401" type="Function">
+                            <param id="0" name="Name">&quot;CenterBlocker&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="934795002842109" type="Blocker">
+                            <param id="0" name="X">PlayerHeart.X</param>
+                            <param id="1" name="Y">PlayerHeart.Y</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="583860992653140" type="GreenCircle">
+                            <param id="0" name="X">PlayerHeart.X</param>
+                            <param id="1" name="Y">PlayerHeart.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="115328020503293">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="180220531309398" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="867527277256799">
+                            <conditions>
+                                <condition id="-11" inverted="1" name="Is within angle" sid="496859438760926" type="Blocker">
+                                    <param id="0" name="Within">ROTATE_SPEED</param>
+                                    <param id="1" name="Angle">LastInputtedAngle</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-20" name="Rotate toward angle" sid="113175777569727" type="Blocker">
+                                    <param id="0" name="Degrees">ROTATE_SPEED</param>
+                                    <param id="1" name="Angle">LastInputtedAngle</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="525505275047991">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="604156720717040" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-20" name="Rotate toward angle" sid="249154933346125" type="Blocker">
+                                    <param id="0" name="Degrees">abs(LastInputtedAngle-Blocker.Angle)</param>
+                                    <param id="1" name="Angle">LastInputtedAngle</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="245774594399120">
+                    <conditions>
+                        <condition id="0" name="On function" sid="100568267748978" type="Function">
+                            <param id="0" name="Name">&quot;TuneBlocker&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="135538366383582">
+                    <conditions>
+                        <condition id="0" name="On function" sid="133632482728927" type="Function">
+                            <param id="0" name="Name">&quot;CenterBlockerReveal&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="980410975054091" type="Blocker">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="349575798133101" type="GreenCircle">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="761351273151005" type="Blocker">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="475200252855782" type="GreenCircle">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="613293007893175">
+                    <conditions>
+                        <condition id="0" name="On function" sid="211620449790479" type="Function">
+                            <param id="0" name="Name">&quot;CenterBlockerHide&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="127129726915407" type="Blocker">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="534429089908659" type="GreenCircle">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="654315457262400" type="Blocker">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="844167842860605" type="GreenCircle">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
