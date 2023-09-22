@@ -1209,6 +1209,82 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="RStartLoc" sid="290283644753788">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="414421355745717" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedRightArrow.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.25" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="0.75" y="0.291667" />
+                            <point x="0.821429" y="0.5" />
+                            <point x="0.714286" y="0.666667" />
+                            <point x="0.5" y="0.708333" />
+                            <point x="0.321429" y="0.625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LStartLoc" sid="587221326465568">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304346851652142" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedLeftArrow.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.25" />
+                            <point x="0.481481" y="0.166667" />
+                            <point x="0.777778" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.666667" y="0.625" />
+                            <point x="0.481481" y="0.708333" />
+                            <point x="0.296296" y="0.666667" />
+                            <point x="0.148148" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DStartLoc" sid="401573331346887">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604107040547807" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedDownArrow.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.233333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.666667" y="0.266667" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.625" y="0.7" />
+                            <point x="0.5" y="0.8" />
+                            <point x="0.333333" y="0.733333" />
+                            <point x="0.208333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UStartLoc" sid="582291313406860">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="732579088256213" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedUpArrow.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.230769" />
+                            <point x="0.5" y="0.0769231" />
+                            <point x="0.708333" y="0.269231" />
+                            <point x="0.666667" y="0.5" />
+                            <point x="0.666667" y="0.692308" />
+                            <point x="0.5" y="1" />
+                            <point x="0.291667" y="0.730769" />
+                            <point x="0.291667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="BoneStab" plugin-id="NinePatch" sid="9321183475132962">

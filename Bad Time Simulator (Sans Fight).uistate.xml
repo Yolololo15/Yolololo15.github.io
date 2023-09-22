@@ -10,11 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">BattleScreen</layout>
+        <layout active="1" order="0">BattleScreen</layout>
         <layout order="5">System</layout>
         <event-sheet order="1">InputManagement</event-sheet>
         <event-sheet order="2">Globals</event-sheet>
-        <event-sheet active="1" order="3">Battle</event-sheet>
+        <event-sheet order="3">Battle</event-sheet>
         <event-sheet order="4">RPGText</event-sheet>
         <event-sheet order="6">AttackLoader</event-sheet>
         <event-sheet order="7">Timeline</event-sheet>
@@ -84,5 +84,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PlayerHitbox/" />
         <folder expanded="1" path="animation-folder/Blocker/" />
         <folder expanded="1" path="animation-folder/GreenCircle/" />
+        <folder expanded="1" path="animation-folder/RStartLoc/" />
+        <folder expanded="1" path="animation-folder/LStartLoc/" />
+        <folder expanded="1" path="animation-folder/DStartLoc/" />
+        <folder expanded="1" path="animation-folder/UStartLoc/" />
     </folders-expanded>
 </c2uistate>

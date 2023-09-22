@@ -4709,11 +4709,9 @@
                                     <param id="2" name="X">0</param>
                                     <param id="3" name="Y">0</param>
                                 </action>
-                                <action id="-1" name="Set X" sid="700411075678161" type="ArrowR">
-                                    <param id="0" name="X">PlayerHeart.X + (-1 * int(Function.Param(0)))</param>
-                                </action>
-                                <action id="-2" name="Set Y" sid="217683899122400" type="ArrowR">
-                                    <param id="0" name="Y">PlayerHeart.Y</param>
+                                <action id="-3" name="Set position" sid="700411075678161" type="ArrowR">
+                                    <param id="0" name="X">RStartLoc.X</param>
+                                    <param id="1" name="Y">RStartLoc.Y</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="710615329265019" type="ArrowR">
                                     <param id="0" name="Instance variable">Direction</param>
@@ -4721,7 +4719,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="281057349915055" type="ArrowR">
                                     <param id="0" name="Instance variable">Speed</param>
-                                    <param id="1" name="Value">50</param>
+                                    <param id="1" name="Value">int(Function.Param(1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -4742,11 +4740,9 @@
                                     <param id="2" name="X">0</param>
                                     <param id="3" name="Y">0</param>
                                 </action>
-                                <action id="-1" name="Set X" sid="376434653656761" type="ArrowL">
-                                    <param id="0" name="X">PlayerHeart.X+ (int(Function.Param(0)))</param>
-                                </action>
-                                <action id="-2" name="Set Y" sid="264918731319350" type="ArrowL">
-                                    <param id="0" name="Y">PlayerHeart.Y </param>
+                                <action id="-3" name="Set position" sid="376434653656761" type="ArrowL">
+                                    <param id="0" name="X">LStartLoc.X</param>
+                                    <param id="1" name="Y">LStartLoc.Y</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="326511100213593" type="ArrowL">
                                     <param id="0" name="Instance variable">Direction</param>
@@ -4754,7 +4750,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="169321278353754" type="ArrowL">
                                     <param id="0" name="Instance variable">Speed</param>
-                                    <param id="1" name="Value">50</param>
+                                    <param id="1" name="Value">int(Function.Param(1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -4775,11 +4771,9 @@
                                     <param id="2" name="X">0</param>
                                     <param id="3" name="Y">0</param>
                                 </action>
-                                <action id="-1" name="Set X" sid="854437083160585" type="ArrowU">
-                                    <param id="0" name="X">PlayerHeart.X</param>
-                                </action>
-                                <action id="-2" name="Set Y" sid="499780764790323" type="ArrowU">
-                                    <param id="0" name="Y">PlayerHeart.Y + int(Function.Param(0))</param>
+                                <action id="-3" name="Set position" sid="499780764790323" type="ArrowU">
+                                    <param id="0" name="X">UStartLoc.X</param>
+                                    <param id="1" name="Y">UStartLoc.Y</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="953235485067706" type="ArrowU">
                                     <param id="0" name="Instance variable">Direction</param>
@@ -4787,7 +4781,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="958218177962784" type="ArrowU">
                                     <param id="0" name="Instance variable">Speed</param>
-                                    <param id="1" name="Value">50</param>
+                                    <param id="1" name="Value">int(Function.Param(1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -4808,11 +4802,9 @@
                                     <param id="2" name="X">0</param>
                                     <param id="3" name="Y">0</param>
                                 </action>
-                                <action id="-1" name="Set X" sid="909362719266749" type="ArrowD">
-                                    <param id="0" name="X">PlayerHeart.X</param>
-                                </action>
-                                <action id="-2" name="Set Y" sid="855638027407683" type="ArrowD">
-                                    <param id="0" name="Y">PlayerHeart.Y + (-1 * int(Function.Param(0)))</param>
+                                <action id="-3" name="Set position" sid="128338375871304" type="ArrowD">
+                                    <param id="0" name="X">DStartLoc.X</param>
+                                    <param id="1" name="Y">DStartLoc.Y</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="536286369022934" type="ArrowD">
                                     <param id="0" name="Instance variable">Direction</param>
@@ -4820,7 +4812,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="853600693795340" type="ArrowD">
                                     <param id="0" name="Instance variable">Speed</param>
-                                    <param id="1" name="Value">50</param>
+                                    <param id="1" name="Value">int(Function.Param(1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -4865,16 +4857,6 @@
                                     <param id="0" name="Animation">&quot;Default&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="162323831680389">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="705732189173903" type="PlayerHitbox">
-                                    <param id="0" name="Object">ArrowSprite</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="844107869453968" type="ArrowSprite" />
                             </actions>
                         </event-block>
                         <event-block sid="168054253618498">
@@ -8442,6 +8424,7 @@
                                     <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
                                     <param id="1" name="Parameter {n}">12{###}0</param>
                                 </action>
+                                <action id="-9" name="Destroy" sid="652642678954240" type="ArrowSprite" />
                             </actions>
                         </event-block>
                         <event-block sid="3041692031166179">
@@ -9396,7 +9379,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <variable constant="1" name="ROTATE_SPEED" sid="369338599475471" static="0" type="number">30</variable>
+        <variable constant="1" name="ROTATE_SPEED" sid="369338599475471" static="0" type="number">40</variable>
         <event-group description="" sid="938476576242042" title="PlayerBlocker">
             <sub-events>
                 <event-block sid="288648169672846">
