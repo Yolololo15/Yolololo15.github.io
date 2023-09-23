@@ -1221,7 +1221,7 @@
                             <actions>
                                 <action id="-10" name="Set value" sid="4925109422702469" type="CombatZone">
                                     <param id="0" name="Instance variable">InfoText</param>
-                                    <param id="1" name="Value">&quot;* You felt your sins crawling&quot; &amp; newline &amp; &quot;  on your back.&quot;</param>
+                                    <param id="1" name="Value">&quot;* The wind is howling...&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1845,7 +1845,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="818540111613540" type="Function">
                                     <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
-                                    <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Sans&quot;{###}Action</param>
+                                    <param id="1" name="Parameter {n}">&quot;CombatZone&quot;{###}64{###}272{###}0{###}&quot;* Undyne the Undying&quot;{###}Action</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -4824,10 +4824,10 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="945599559025314" type="ArrowSprite">
-                            <param id="0" name="Y">ArrowSprite.Y + sin(ArrowSprite.Direction*90)*dt*ArrowSprite.Speed</param>
+                            <param id="0" name="Y">ArrowSprite.Y + sin(ArrowSprite.Direction*90)*(dt)*ArrowSprite.Speed</param>
                         </action>
                         <action id="-1" name="Set X" sid="488888977517187" type="ArrowSprite">
-                            <param id="0" name="X">ArrowSprite.X + cos(ArrowSprite.Direction*90)*dt*ArrowSprite.Speed</param>
+                            <param id="0" name="X">ArrowSprite.X + cos(ArrowSprite.Direction*90)*(dt)*ArrowSprite.Speed</param>
                         </action>
                     </actions>
                 </event-block>
@@ -4837,10 +4837,10 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="263413679316656" type="ArrowSprite">
-                            <param id="0" name="Y">ArrowSprite.Y + sin(ArrowSprite.Direction*90)*dt*ArrowSprite.Speed</param>
+                            <param id="0" name="Y">ArrowSprite.Y + sin(ArrowSprite.Direction*90)*(dt)*ArrowSprite.Speed</param>
                         </action>
                         <action id="-1" name="Set X" sid="197670257644655" type="ArrowSprite">
-                            <param id="0" name="X">ArrowSprite.X + cos(ArrowSprite.Direction*90)*dt*ArrowSprite.Speed</param>
+                            <param id="0" name="X">ArrowSprite.X + cos(ArrowSprite.Direction*90)*(dt)*ArrowSprite.Speed</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -8547,6 +8547,17 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="741268446193439">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="297825736308333" type="System" />
+                        <condition id="1" name="Is overlapping another object" sid="555052706501812" type="PlayerHitbox">
+                            <param id="0" name="Object">ArrowSprite</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="626149058119058" type="ArrowSprite" />
+                    </actions>
+                </event-block>
                 <event-block sid="9201836221228847">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="3110233585653248" type="System">
@@ -9379,7 +9390,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <variable constant="1" name="ROTATE_SPEED" sid="369338599475471" static="0" type="number">40</variable>
+        <variable constant="1" name="ROTATE_SPEED" sid="369338599475471" static="0" type="number">32</variable>
         <event-group description="" sid="938476576242042" title="PlayerBlocker">
             <sub-events>
                 <event-block sid="288648169672846">

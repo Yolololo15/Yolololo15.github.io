@@ -277,7 +277,7 @@
                 </instance>
                 <instance type="RStartLoc" uid="73">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
@@ -285,8 +285,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-14</x>
-                        <y>225</y>
+                        <x>79</x>
+                        <y>240</y>
                         <z>0</z>
                         <width>28</width>
                         <height>24</height>
@@ -299,7 +299,7 @@
                 </instance>
                 <instance type="LStartLoc" uid="74">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
@@ -307,8 +307,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>654</x>
-                        <y>225</y>
+                        <x>561</x>
+                        <y>240</y>
                         <z>0</z>
                         <width>27</width>
                         <height>24</height>
@@ -321,7 +321,7 @@
                 </instance>
                 <instance type="DStartLoc" uid="75">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
@@ -330,7 +330,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>320</x>
-                        <y>-15</y>
+                        <y>-8</y>
                         <z>0</z>
                         <width>24</width>
                         <height>30</height>
@@ -343,7 +343,7 @@
                 </instance>
                 <instance type="UStartLoc" uid="76">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Disabled</collisions>
@@ -352,7 +352,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>320</x>
-                        <y>493</y>
+                        <y>490</y>
                         <z>0</z>
                         <width>24</width>
                         <height>26</height>
@@ -400,8 +400,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>318</x>
-                        <y>225</y>
+                        <x>358.585784912</x>
+                        <y>329.497375488</y>
                         <z>0</z>
                         <width>80</width>
                         <height>84</height>
