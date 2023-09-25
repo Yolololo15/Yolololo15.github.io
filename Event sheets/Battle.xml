@@ -4694,6 +4694,37 @@
             <sub-events>
                 <variable constant="1" name="REMAININGREDTIMER" sid="457740268355213" static="0" type="number">5</variable>
                 <variable constant="0" name="LastBlock" sid="220003267570582" static="0" type="number">0</variable>
+                <event-group description="" sid="768343605896585" title="RArrowU">
+                    <sub-events>
+                        <event-block sid="284089506040813">
+                            <conditions>
+                                <condition id="0" name="On function" sid="389140273285915" type="Function">
+                                    <param id="0" name="Name">&quot;ArrowD&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="756321450402203" type="System">
+                                    <param id="0" name="Object to create">RArrowD</param>
+                                    <param id="1" name="Layer">&quot;CombatZone&quot;</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="451302559253460" type="RArrowD">
+                                    <param id="0" name="X">DStartLoc.X</param>
+                                    <param id="1" name="Y">DStartLoc.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="869731137421116" type="RArrowD">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">DIRECTION_DOWN</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="285655668077850" type="RArrowD">
+                                    <param id="0" name="Instance variable">Speed</param>
+                                    <param id="1" name="Value">int(Function.Param(1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="627592356428890" title="ArrowR">
                     <sub-events>
                         <event-block sid="711191970330354">
@@ -9390,9 +9421,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <variable constant="1" name="ROTATE_SPEED" sid="369338599475471" static="0" type="number">32</variable>
         <event-group description="" sid="938476576242042" title="PlayerBlocker">
             <sub-events>
+                <variable constant="1" name="ROTATE_SPEED" sid="369338599475471" static="0" type="number">32</variable>
                 <event-block sid="288648169672846">
                     <conditions>
                         <condition id="0" name="On function" sid="835853329837401" type="Function">
@@ -9407,6 +9438,10 @@
                         <action id="-3" name="Set position" sid="583860992653140" type="GreenCircle">
                             <param id="0" name="X">PlayerHeart.X</param>
                             <param id="1" name="Y">PlayerHeart.Y</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="971533013667593" type="System">
+                            <param id="0" name="Variable">LastInputtedAngle</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -9442,14 +9477,6 @@
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="245774594399120">
-                    <conditions>
-                        <condition id="0" name="On function" sid="100568267748978" type="Function">
-                            <param id="0" name="Name">&quot;TuneBlocker&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
                 </event-block>
                 <event-block sid="135538366383582">
                     <conditions>

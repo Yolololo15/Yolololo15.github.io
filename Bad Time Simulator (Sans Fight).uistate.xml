@@ -27,16 +27,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="0">
+    <families-expanded root="1">
         <family expanded="0" name="BoneStab" />
         <family expanded="1" name="Bone" />
         <family expanded="0" name="RPGText" />
         <family expanded="0" name="UIButtons" />
-        <family expanded="0" name="Attack9Patch" />
+        <family expanded="1" name="Attack9Patch" />
         <family expanded="1" name="AttackSprite" />
         <family expanded="0" name="AttackTiled" />
         <family expanded="0" name="TouchButton" />
         <family expanded="1" name="ArrowSprite" />
+        <family expanded="0" name="RArrowSprite" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
@@ -48,7 +49,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Fonts/" />
         <folder expanded="1" path="object-folder/TouchUI/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
@@ -76,6 +77,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/ArrowD/" />
         <folder expanded="1" path="animation-folder/ArrowR/" />
         <folder expanded="1" path="animation-folder/ArrowL/" />
+        <folder expanded="1" path="animation-folder/RArrowD/" />
+        <folder expanded="1" path="animation-folder/RArrowU/" />
+        <folder expanded="1" path="animation-folder/RArrowR/" />
         <folder expanded="1" path="animation-folder/TouchA/" />
         <folder expanded="1" path="animation-folder/TouchB/" />
         <folder expanded="1" path="animation-folder/TouchDPad/" />
@@ -89,5 +93,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/LStartLoc/" />
         <folder expanded="1" path="animation-folder/DStartLoc/" />
         <folder expanded="1" path="animation-folder/UStartLoc/" />
+        <folder expanded="1" path="animation-folder/RArrowL/" />
     </folders-expanded>
 </c2uistate>

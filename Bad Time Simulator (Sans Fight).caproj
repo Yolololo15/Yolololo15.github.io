@@ -962,6 +962,62 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="RArrowD" sid="768687766538791">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239668656141619" speed="5">
+                        <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowUpArrow.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.291667" />
+                                <point x="0.48" y="0.0416667" />
+                                <point x="0.72" y="0.291667" />
+                                <point x="0.68" y="0.5" />
+                                <point x="0.68" y="0.666667" />
+                                <point x="0.48" y="0.958333" />
+                                <point x="0.36" y="0.625" />
+                                <point x="0.36" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RArrowU" sid="748293270196813">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="681828122932922" speed="5">
+                        <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowDownArrow.png">
+                            <collision-poly>
+                                <point x="0.48" y="0" />
+                                <point x="0.64" y="0.375" />
+                                <point x="0.72" y="0.5" />
+                                <point x="0.68" y="0.666667" />
+                                <point x="0.48" y="0.791667" />
+                                <point x="0.32" y="0.666667" />
+                                <point x="0.24" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RArrowR" sid="538176753493512">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131579907403878" speed="5">
+                        <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowLeftArrow.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.291667" />
+                                <point x="0.48" y="0.208333" />
+                                <point x="0.72" y="0.291667" />
+                                <point x="1" y="0.5" />
+                                <point x="0.64" y="0.625" />
+                                <point x="0.48" y="0.708333" />
+                                <point x="0.32" y="0.666667" />
+                                <point x="0.16" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Timeline">
             <object-type global="1" name="TLActionList" sid="456555951765879">
@@ -1285,6 +1341,25 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="RArrowL" sid="624867820120199">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="987148544779097" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowRightArrow.png">
+                        <collision-poly>
+                            <point x="0.28" y="0.291667" />
+                            <point x="0.48" y="0.208333" />
+                            <point x="0.72" y="0.291667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.64" y="0.625" />
+                            <point x="0.48" y="0.708333" />
+                            <point x="0.32" y="0.666667" />
+                            <point x="0.16" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="BoneStab" plugin-id="NinePatch" sid="9321183475132962">
@@ -1407,6 +1482,18 @@
             <instance-variables>
                 <instance-variable name="Direction" sid="197290466367887" type="number" />
                 <instance-variable name="Speed" sid="987199403945304" type="number" />
+            </instance-variables>
+        </family>
+        <family name="RArrowSprite" plugin-id="Sprite" sid="427990459672234">
+            <members>
+                <member>RArrowD</member>
+                <member>RArrowL</member>
+                <member>RArrowR</member>
+                <member>RArrowU</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="Direction" sid="232388498783080" type="number" />
+                <instance-variable name="Speed" sid="692887740957779" type="number" />
             </instance-variables>
         </family>
     </families>
