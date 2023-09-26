@@ -1213,6 +1213,13 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <BegunReverse>false</BegunReverse>
+                        <BegunFinal>false</BegunFinal>
+                        <TimeMarker>0</TimeMarker>
+                        <ReverseMarker>0</ReverseMarker>
+                        <BGR1FD>false</BGR1FD>
+                        <DebugTimer>0</DebugTimer>
+                        <ReverseSpeedMultiplier>1</ReverseSpeedMultiplier>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1239,6 +1246,13 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <BegunReverse>false</BegunReverse>
+                        <BegunFinal>false</BegunFinal>
+                        <TimeMarker>0</TimeMarker>
+                        <ReverseMarker>0</ReverseMarker>
+                        <BGR1FD>false</BGR1FD>
+                        <DebugTimer>0</DebugTimer>
+                        <ReverseSpeedMultiplier>1</ReverseSpeedMultiplier>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1265,6 +1279,13 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <BegunReverse>false</BegunReverse>
+                        <BegunFinal>false</BegunFinal>
+                        <TimeMarker>0</TimeMarker>
+                        <ReverseMarker>0</ReverseMarker>
+                        <BGR1FD>false</BGR1FD>
+                        <DebugTimer>0</DebugTimer>
+                        <ReverseSpeedMultiplier>1</ReverseSpeedMultiplier>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1291,6 +1312,13 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <BegunReverse>false</BegunReverse>
+                        <BegunFinal>false</BegunFinal>
+                        <TimeMarker>0</TimeMarker>
+                        <ReverseMarker>0</ReverseMarker>
+                        <BGR1FD>false</BGR1FD>
+                        <DebugTimer>0</DebugTimer>
+                        <ReverseSpeedMultiplier>1</ReverseSpeedMultiplier>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
