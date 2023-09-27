@@ -4,6 +4,7 @@
     <name>Globals</name>
     <events>
         <variable constant="0" name="LastInputtedAngle" sid="985947435355734" static="0" type="number">0</variable>
+        <variable constant="0" name="UndyneLegsYMod" sid="107616383470028" static="0" type="number">-4</variable>
         <variable constant="1" name="HEARTMODE_RED" sid="2975789364452609" static="0" type="number">0</variable>
         <variable constant="1" name="HEARTMODE_BLUE" sid="6376919357343526" static="0" type="number">1</variable>
         <variable constant="1" name="HEARTMODE_GREEN" sid="881300441386574" static="0" type="number">2</variable>
@@ -15,6 +16,8 @@
         <variable constant="1" name="DIRECTION_UP" sid="230503664799169" static="0" type="number">3</variable>
         <variable constant="1" name="DIRECTION_LEFT" sid="846096395188657" static="0" type="number">2</variable>
         <variable constant="1" name="DIRECTION_DOWN" sid="539184236377188" static="0" type="number">1</variable>
+        <variable constant="1" name="WEAPON_KNIFE" sid="935811728282783" static="0" type="number">0</variable>
+        <variable constant="1" name="WEAPON_BALLET" sid="449507191304488" static="0" type="number">1</variable>
         <variable constant="0" name="SimulatorMode" sid="2567313271818781" static="0" type="number">0</variable>
         <variable constant="0" name="EndlessStage" sid="1966297049622465" static="0" type="number">0</variable>
         <variable constant="0" name="PracticeTarget" sid="824857649224256" static="0" type="number">60</variable>
@@ -24,5 +27,8 @@
         <variable constant="0" name="MaxHP" sid="2742940924955148" static="0" type="number">60</variable>
         <variable constant="0" name="KR" sid="2189987320058474" static="0" type="number">0</variable>
         <variable constant="0" name="KR_T" sid="8948293770944489" static="0" type="number">0</variable>
+        <variable constant="0" name="WeaponType" sid="399677559995510" static="0" type="number">1</variable>
+        <variable constant="0" name="one" sid="765994660346569" static="0" type="number">0</variable>
+        <variable constant="0" name="two" sid="328505335201159" static="0" type="number">0</variable>
     </events>
 </c2eventsheet>

@@ -286,6 +286,30 @@
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
+            <object-type name="TargetChoice2" sid="920191097199907">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Direction" sid="402240138839839" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="409347744308818" speed="30">
+                        <frame duration="3" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_targetchoice_0.png" />
+                        <frame duration="2" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_targetchoice_1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TargetChoice3" sid="606534576089348">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Direction" sid="225206938910302" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474225170371824" speed="30">
+                        <frame duration="3" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_targetchoice_0.png" />
+                        <frame duration="2" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_targetchoice_1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Enemies">
             <object-type name="UndyneHead" sid="2086066613273419">
@@ -1391,6 +1415,18 @@
                                 <point x="0.291667" y="0.5" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Opacity" sid="388748948626191">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="T" sid="170673716386986" type="number" />
+                    <instance-variable name="TargetOpacity" sid="217962787247403" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207789300779902" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>

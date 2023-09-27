@@ -11,10 +11,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="8">MainMenu</layout>
-        <layout active="1" order="0">BattleScreen</layout>
+        <layout order="0">BattleScreen</layout>
         <layout order="9">System</layout>
         <event-sheet order="2">Globals</event-sheet>
-        <event-sheet order="1">Battle</event-sheet>
+        <event-sheet active="1" order="1">Battle</event-sheet>
         <event-sheet order="3">RPGText</event-sheet>
         <event-sheet order="4">AttackLoader</event-sheet>
         <event-sheet order="5">Timeline</event-sheet>
@@ -65,6 +65,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/KR/" />
         <folder expanded="1" path="animation-folder/TargetChoice/" />
         <folder expanded="1" path="animation-folder/Strike/" />
+        <folder expanded="1" path="animation-folder/TargetChoice2/" />
+        <folder expanded="1" path="animation-folder/TargetChoice3/" />
         <folder expanded="1" path="animation-folder/UndyneHead/" />
         <folder expanded="1" path="animation-folder/UndyneLeftArm/" />
         <folder expanded="1" path="animation-folder/UndyneLegs/" />
@@ -96,6 +98,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PlayerHeart/" />
         <folder expanded="1" path="animation-folder/RStartLoc/" />
         <folder expanded="1" path="animation-folder/UStartLoc/" />
+        <folder expanded="1" path="animation-folder/Opacity/" />
         <folder expanded="1" path="animation-folder/MenuItem/" />
         <folder expanded="1" path="animation-folder/HeartShard/" />
         <folder expanded="1" path="animation-folder/PlayerHitbox/" />
