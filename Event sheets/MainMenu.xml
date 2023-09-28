@@ -132,7 +132,7 @@
                             <param id="0" name="Scale">2</param>
                         </action>
                         <action id="0" name="Set text" sid="6017732506802038" type="UndyneFont">
-                            <param id="0" name="Text">&quot;Select your bad time&quot;</param>
+                            <param id="0" name="Text">&quot;How hard are you gonna try?&quot;</param>
                         </action>
                         <action id="7" name="Set horizontal alignment" sid="6681899051898119" type="UndyneFont">
                             <param id="0" name="Horizontal alignment">1</param>
@@ -522,12 +522,12 @@
                                 <action id="-28" name="Set effect parameter" sid="5348712262903138" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">0</param>
-                                    <param id="2" name="Value">100</param>
+                                    <param id="2" name="Value">0</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="3100769631086494" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>
                                     <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">0</param>
+                                    <param id="2" name="Value">75</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="1761116705025522" type="PlayerHeart">
                                     <param id="0" name="Effect">&quot;Tint&quot;</param>

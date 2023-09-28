@@ -781,7 +781,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TargetChoice" uid="45">
+                <instance type="TargetChoice1" uid="45">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -789,12 +789,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <Stopped>false</Stopped>
                         <Direction>0</Direction>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>320</x>
+                        <x>300</x>
                         <y>416</y>
                         <z>0</z>
                         <width>14</width>
@@ -1338,12 +1339,13 @@
                 <instance type="TargetChoice2" uid="84">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>NotNext</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Direction>0</Direction>
+                        <Stopped>false</Stopped>
+                        <Direction2>0</Direction2>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1363,17 +1365,18 @@
                 <instance type="TargetChoice3" uid="85">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>NotNext</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Direction>0</Direction>
+                        <Stopped>false</Stopped>
+                        <Direction2>0</Direction2>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>320</x>
+                        <x>340</x>
                         <y>416</y>
                         <z>0</z>
                         <width>14</width>

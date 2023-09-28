@@ -287,7 +287,7 @@
                             <param id="0" name="X">UndyneLegs.X + 64</param>
                         </action>
                         <action id="-2" name="Set Y" sid="263588128954958" type="SpeechBubble">
-                            <param id="0" name="Y">UndyneLegs.Y - 128</param>
+                            <param id="0" name="Y">UndyneLegs.Y - 224</param>
                         </action>
                         <action id="-3" name="Create object" sid="847457127208448" type="System">
                             <param id="0" name="Object to create">UndyneFont</param>

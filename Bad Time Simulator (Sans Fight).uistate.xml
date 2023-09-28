@@ -10,16 +10,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="8">MainMenu</layout>
-        <layout order="0">BattleScreen</layout>
-        <layout order="9">System</layout>
-        <event-sheet order="2">Globals</event-sheet>
-        <event-sheet active="1" order="1">Battle</event-sheet>
-        <event-sheet order="3">RPGText</event-sheet>
-        <event-sheet order="4">AttackLoader</event-sheet>
-        <event-sheet order="5">Timeline</event-sheet>
-        <event-sheet order="6">Menus</event-sheet>
-        <event-sheet order="7">MainMenu</event-sheet>
+        <layout order="1">BattleScreen</layout>
+        <layout order="9">MainMenu</layout>
+        <layout order="10">System</layout>
+        <event-sheet active="1" order="2">Battle</event-sheet>
+        <event-sheet order="3">Globals</event-sheet>
+        <event-sheet order="4">RPGText</event-sheet>
+        <event-sheet order="5">AttackLoader</event-sheet>
+        <event-sheet order="6">Timeline</event-sheet>
+        <event-sheet order="7">Menus</event-sheet>
+        <event-sheet order="8">MainMenu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -38,6 +38,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="TouchButton" />
         <family expanded="1" name="ArrowSprite" />
         <family expanded="1" name="RArrowSprite" />
+        <family expanded="1" name="TargetChoice" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -63,7 +64,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Target/" />
         <folder expanded="1" path="animation-folder/HP/" />
         <folder expanded="1" path="animation-folder/KR/" />
-        <folder expanded="1" path="animation-folder/TargetChoice/" />
+        <folder expanded="1" path="animation-folder/TargetChoice1/" />
         <folder expanded="1" path="animation-folder/Strike/" />
         <folder expanded="1" path="animation-folder/TargetChoice2/" />
         <folder expanded="1" path="animation-folder/TargetChoice3/" />
