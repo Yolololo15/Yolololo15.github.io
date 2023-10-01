@@ -2807,6 +2807,10 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="1115858108333321" type="Strike" />
+                        <action id="0" name="Call function" sid="339902109767109" type="Function">
+                            <param id="0" name="Name">&quot;SansAnimation&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;Hurt&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="5745093407184255">
@@ -5359,6 +5363,7 @@
                 <variable constant="1" name="FREQMOD" sid="537864387734228" static="0" type="number">400</variable>
                 <variable constant="1" name="AMPMOD" sid="916754361678809" static="0" type="number">11.5</variable>
                 <variable constant="1" name="MAXLIFE" sid="685293532534871" static="0" type="number">5</variable>
+                <variable constant="1" name="OPMOD" sid="104016717629225" static="0" type="number">2.5</variable>
                 <variable constant="0" name="InitialReverseDistance" sid="218878974819584" static="0" type="number">75</variable>
                 <variable constant="0" name="LastBlock" sid="220003267570582" static="0" type="number">0</variable>
                 <event-group description="" sid="818485607220486" title="Arrow">
@@ -5394,6 +5399,10 @@
                                             <param id="0" name="Layer">&quot;AttacksOverOpacity&quot;</param>
                                         </action>
                                         <action id="-24" name="Move to top" sid="483017570025917" type="ArrowR" />
+                                        <action id="-10" name="Set value" sid="333787150297970" type="ArrowR">
+                                            <param id="0" name="Instance variable">TimeMarker</param>
+                                            <param id="1" name="Value">time</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -5429,6 +5438,10 @@
                                             <param id="0" name="Layer">&quot;AttacksOverOpacity&quot;</param>
                                         </action>
                                         <action id="-24" name="Move to top" sid="286567170742624" type="ArrowL" />
+                                        <action id="-10" name="Set value" sid="442509979188191" type="ArrowL">
+                                            <param id="0" name="Instance variable">TimeMarker</param>
+                                            <param id="1" name="Value">time</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -5464,6 +5477,10 @@
                                             <param id="0" name="Layer">&quot;AttacksOverOpacity&quot;</param>
                                         </action>
                                         <action id="-24" name="Move to top" sid="513358295263682" type="ArrowU" />
+                                        <action id="-10" name="Set value" sid="108979749187689" type="ArrowU">
+                                            <param id="0" name="Instance variable">TimeMarker</param>
+                                            <param id="1" name="Value">time</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -5499,6 +5516,10 @@
                                             <param id="0" name="Layer">&quot;AttacksOverOpacity&quot;</param>
                                         </action>
                                         <action id="-24" name="Move to top" sid="492940541455833" type="ArrowD" />
+                                        <action id="-10" name="Set value" sid="524051549897766" type="ArrowD">
+                                            <param id="0" name="Instance variable">TimeMarker</param>
+                                            <param id="1" name="Value">time</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -5552,6 +5573,10 @@
                                         <action id="4" name="Set animation" sid="530131113536569" type="Blocker">
                                             <param id="0" name="Animation">&quot;Red&quot;</param>
                                             <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="14" name="Log" sid="496446097802266" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">time - ArrowSprite.TimeMarker</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -6234,6 +6259,144 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <event-group description="" sid="718049255552528" title="ArrowRandom">
+                    <sub-events>
+                        <event-block sid="748041263115089">
+                            <conditions>
+                                <condition id="0" name="On function" sid="856068651020680" type="Function">
+                                    <param id="0" name="Name">&quot;ArrowRandom&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="Speed" sid="577247949156845" static="0" type="number">0</variable>
+                                <variable constant="0" name="rand" sid="172075208949590" static="0" type="number">0</variable>
+                                <event-block sid="965758409404473">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="390853762208051" type="System">
+                                            <param id="0" name="Variable">rand</param>
+                                            <param id="1" name="Value">floor(random(4))</param>
+                                        </action>
+                                        <action disabled="1" id="14" name="Log" sid="729788722041908" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">rand</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="408236608137965">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="959540005140599" type="System">
+                                            <param id="0" name="First value">rand</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="470546717925687" type="Function">
+                                            <param id="0" name="Name">&quot;ArrowR&quot;</param>
+                                            <param id="1" name="Parameter {n}">1{###}Function.Param(1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="588978185856764">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="834063326864382" type="System">
+                                            <param id="0" name="First value">rand</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="801255622885172" type="Function">
+                                            <param id="0" name="Name">&quot;ArrowU&quot;</param>
+                                            <param id="1" name="Parameter {n}">1{###}Function.Param(1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="682145020162369">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="454444837323777" type="System">
+                                            <param id="0" name="First value">rand</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="692982912531833" type="Function">
+                                            <param id="0" name="Name">&quot;ArrowL&quot;</param>
+                                            <param id="1" name="Parameter {n}">1{###}Function.Param(1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="817398875192577">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="671328893053927" type="System">
+                                            <param id="0" name="First value">rand</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="416472820941261" type="Function">
+                                            <param id="0" name="Name">&quot;ArrowD&quot;</param>
+                                            <param id="1" name="Parameter {n}">1{###}Function.Param(1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="295122812869807">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="743524219957184" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="848099234571199">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="267756795848244" type="ArrowSprite">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">PlayerHitbox.X</param>
+                                    <param id="2" name="Y">PlayerHitbox.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="733044071254691" type="ArrowSprite">
+                                    <param id="0" name="Animation">&quot;Red&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="774794307416356">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="845934522707690" type="ArrowSprite">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="910201500664388" type="ArrowSprite">
+                                    <param id="0" name="Opacity">ArrowSprite.Opacity + cos(dt) * OPMOD</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="539010498896815">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="583289794308907" type="RArrowSprite">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="480652793520316" type="RArrowSprite">
+                                    <param id="0" name="Opacity">RArrowSprite.Opacity + cos(dt) * OPMOD</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="6115443361825044" title="Bones">
@@ -6377,6 +6540,13 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <variable constant="0" name="StartX2" sid="791098242251124" static="0" type="number">0</variable>
+                        <variable constant="0" name="StartY2" sid="611535044446428" static="0" type="number">0</variable>
+                        <variable constant="0" name="Width2" sid="598429091736045" static="0" type="number">0</variable>
+                        <variable constant="0" name="Direction2" sid="685936392443563" static="0" type="number">0</variable>
+                        <variable constant="0" name="Speed2" sid="206214908925162" static="0" type="number">0</variable>
+                        <variable constant="0" name="Count2" sid="713774326887504" static="0" type="number">0</variable>
+                        <variable constant="0" name="Spacing2" sid="410341072086049" static="0" type="number">0</variable>
                         <event-block sid="171114345638357">
                             <conditions>
                                 <condition id="-10" name="For" sid="1362267358103699" type="System">
@@ -8828,6 +8998,8 @@
         <event-group description="" sid="7849474356685905" title="SansAnimation">
             <sub-events>
                 <variable constant="0" name="OpacityRate" sid="770241530744747" static="0" type="number">10</variable>
+                <variable constant="0" name="RotMod" sid="589897949698369" static="0" type="number">1000</variable>
+                <variable constant="0" name="speedmod" sid="753073837315612" static="0" type="number">666</variable>
                 <variable constant="0" name="SansAnimation" sid="7991719124201338" static="1" type="text"></variable>
                 <variable constant="1" name="UndyneHeadAlign" sid="566968455929619" static="0" type="number">2</variable>
                 <event-block sid="1101390295237313">
@@ -8852,6 +9024,80 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="263051585508471">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="191573416892951" type="UndyneHead">
+                            <param id="0" name="Animation">&quot;Tired1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="410612812162683" type="UndyneHead">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="857236400723903" type="UndyneRightArm">
+                            <param id="0" name="Instance variable">TargetAngle</param>
+                            <param id="1" name="Value">290</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="930532362241231" type="UndyneRightArm" />
+                        <action id="-3" name="Create object" sid="151123239949688" type="System">
+                            <param id="0" name="Object to create">UndyneSlash</param>
+                            <param id="1" name="Layer">5</param>
+                            <param id="2" name="X">UndyneLegs.X</param>
+                            <param id="3" name="Y">UndyneLegs.Y -15</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="897141310726023" type="System">
+                            <param id="0" name="Object to create">UndyneSlashProjectile</param>
+                            <param id="1" name="Layer">5</param>
+                            <param id="2" name="X">UndyneSlash.X</param>
+                            <param id="3" name="Y">UndyneSlash.Y</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="890575024216587" type="UndyneSlash">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="12" name="Set repeat-to frame" sid="649701273776759" type="UndyneSlash">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="513426679698051" type="UndyneSlash">
+                            <param id="0" name="Speed">30</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="939386959796507" type="UndyneSlash">
+                            <param id="0" name="Instance variable">T</param>
+                            <param id="1" name="Value">time</param>
+                        </action>
+                        <action id="14" name="Log" sid="812267239438613" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">str(time)</param>
+                        </action>
+                        <action id="0" name="Call function" sid="959785911405478" type="Function">
+                            <param id="0" name="Name">&quot;HeartMode&quot;</param>
+                            <param id="1" name="Parameter {n}">HEARTMODE_RED</param>
+                        </action>
+                        <action id="0" name="Call function" sid="983496666277567" type="Function">
+                            <param id="0" name="Name">&quot;CenterBlockerHide&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="139405627395192">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="208254502651348" type="UndyneSlash" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="347882669190737" type="UndyneRightArm">
+                            <param id="0" name="Instance variable">TargetAngle</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="725820146726910" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="851973259984810" type="System">
+                            <param id="0" name="Variable">SansAnimation</param>
+                            <param id="1" name="Value">&quot;Idle&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="932562135239209">
                     <conditions>
                         <condition id="0" name="On function" sid="258333638415358" type="Function">
@@ -8862,6 +9108,33 @@
                         <action id="0" name="Call function" sid="162165020536750" type="Function">
                             <param id="0" name="Name">&quot;UndyneText&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;You&apos;re gonna have&quot; &amp;newline&amp; &quot;to try a little &quot;&amp;newline&amp;&quot;harder than THAT.&quot;{###}&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="468128547932170">
+                    <conditions>
+                        <condition id="0" name="On function" sid="763751494580162" type="Function">
+                            <param id="0" name="Name">&quot;UndyneHeartSwing&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="509744255675109" type="UndyneHead">
+                            <param id="0" name="Animation">&quot;Tired1&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="185279280817935" type="UndyneHead">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="169346168034566" type="UndyneHead">
+                            <param id="0" name="Speed">60</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="352017273435839" type="UndyneRightArm">
+                            <param id="0" name="Instance variable">TargetAngle</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="401870583866129" type="System">
+                            <param id="0" name="Variable">SansAnimation</param>
+                            <param id="1" name="Value">&quot;ArmSwing&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -9064,9 +9337,9 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="5774018796480299" type="UndyneLegs">
-                            <param id="0" name="Y">CombatZone.BBoxTop - 4</param>
+                            <param id="0" name="Y">CombatZone.BBoxTop + UndyneLegsYMod</param>
                         </action>
-                        <action id="-1" name="Set X" sid="1611247167854349" type="UndyneLegs">
+                        <action disabled="1" id="-1" name="Set X" sid="1611247167854349" type="UndyneLegs">
                             <param id="0" name="X">UndyneLegs.X + UndyneLegs.XSpeed*dt</param>
                         </action>
                         <action id="-12" name="Subtract from" sid="8128390878391567" type="UndyneLegs">
@@ -9156,10 +9429,6 @@
                                 <action id="-10" name="Set value" sid="5381010199169351" type="UndyneLegs">
                                     <param id="0" name="Instance variable">DodgeTimer</param>
                                     <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="982721335240597" type="UndyneHead">
-                                    <param id="0" name="Animation">&quot;BlueEye&quot;</param>
-                                    <param id="1" name="From">1</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="6865508873045757" type="System">
                                     <param id="0" name="Seconds">0.6</param>
@@ -9323,6 +9592,10 @@
                             <param id="0" name="Instance variable">T</param>
                             <param id="1" name="Value">dt</param>
                         </action>
+                        <action id="-11" name="Add to" sid="825520354012198" type="UndyneLegs">
+                            <param id="0" name="Instance variable">T</param>
+                            <param id="1" name="Value">dt</param>
+                        </action>
                         <action id="4" name="Set animation" sid="198586018029004" type="UndyneHair">
                             <param id="0" name="Animation">&quot;Flowing&quot;</param>
                             <param id="1" name="From">1</param>
@@ -9336,12 +9609,17 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="6768416817698473">
+                <event-block any="1" sid="6768416817698473">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="2486277728362958" type="System">
                             <param id="0" name="Variable">SansAnimation</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;Idle&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="592340653035612" type="System">
+                            <param id="0" name="Variable">SansAnimation</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;ArmSwing&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -9549,7 +9827,34 @@
                                 <action id="-5" name="Set width" sid="842333299038628" type="Eyebeam">
                                     <param id="0" name="Width">((cos(180 * (Eyebeam.T+0.45)/  0.9)) + 1) * 300 + 100</param>
                                 </action>
+                                <action id="-16" name="Set opacity" sid="836451689837602" type="UndyneSlash">
+                                    <param id="0" name="Opacity">UndyneSlash.Opacity - (OpacityRate * 25) * dt</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="517448808288504" type="UndyneSlashProjectile">
+                                    <param id="0" name="Opacity">UndyneSlashProjectile.Opacity - (OpacityRate * 25) * dt</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="216298025887660" type="UndyneSlashProjectile">
+                                    <param id="0" name="Y">UndyneSlashProjectile.Y + speedmod * dt</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="130418808725971">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="408096612452442" type="System">
+                                            <param id="0" name="Variable">SansAnimation</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Idle&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="151696585298787" type="UndyneHead">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="178173583822977" type="UndyneRightArm" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -9602,6 +9907,139 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="775171027536857">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="630060470128311" type="System">
+                            <param id="0" name="Variable">SansAnimation</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Hurt&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="frequency" sid="283150777344179" static="0" type="number">360</variable>
+                        <variable constant="0" name="amplitude" sid="501552517315188" static="0" type="number">25</variable>
+                        <variable constant="0" name="sign" sid="689416776015995" static="1" type="number">1</variable>
+                        <variable constant="0" name="framestall" sid="948723334369167" static="0" type="number">0</variable>
+                        <variable constant="0" name="counter" sid="159949954637224" static="0" type="number">0</variable>
+                        <event-block sid="284456945285670">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="485687396604732" type="UndyneLegs">
+                                    <param id="0" name="Instance variable">TimeMarker</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="378933209419867" type="UndyneLegs">
+                                    <param id="0" name="Instance variable">TimeMarker</param>
+                                    <param id="1" name="Value">time</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="405684862390181">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="963610306258993" type="UndyneLegs">
+                                    <param id="0" name="Instance variable">TimeMarker</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">time - 1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="509911304811362" type="System">
+                                    <param id="0" name="Variable">SansAnimation</param>
+                                    <param id="1" name="Value">&quot;Idle&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="603116592096226" type="UndyneLegs">
+                                    <param id="0" name="Instance variable">TimeMarker</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="655591847903613">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="374204358789056" type="UndyneLegs">
+                                    <param id="0" name="Instance variable">T</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0.06666</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="603384193984089" type="UndyneLegs">
+                                    <param id="0" name="Instance variable">T</param>
+                                    <param id="1" name="Value">0.06666</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="475300980815526" type="UndyneLegs">
+                                    <param id="0" name="Instance variable">XOffset</param>
+                                    <param id="1" name="Value">sign * amplitude * (UndyneLegs.TimeMarker + 1 - time)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="316560011219871" type="System">
+                                    <param id="0" name="Variable">sign</param>
+                                    <param id="1" name="Value">sign * -1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="679586630917359" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="648515680155662">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="811971185459381" type="Eyebeam">
+                                    <param id="0" name="Instance variable">T</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0.9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="956730670877782" type="Eyebeam">
+                                    <param id="0" name="Instance variable">T</param>
+                                    <param id="1" name="Value">0.9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="338233778991593">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="304209945062431" type="System" />
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="-10" name="Set value" sid="403806655993809" type="UndyneHead">
+                                    <param id="0" name="Instance variable">OffsetX</param>
+                                    <param id="1" name="Value">sin(360*UndyneHead.T/1.1)</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="836995011357806" type="UndyneHead">
+                                    <param id="0" name="Animation">&quot;BlueEye&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="683394538682720" type="Eyebeam">
+                                    <param id="0" name="Instance variable">AngleOffset</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="331489000330072" type="Eyebeam">
+                                    <param id="0" name="Opacity">max(sin(180 * (Eyebeam.T+0.40)/ 0.9), 0) * 100</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="356813320019635" type="Eyebeam">
+                                    <param id="0" name="Width">((cos(180 * (Eyebeam.T+0.45)/  0.9)) + 1) * 300 + 100</param>
+                                </action>
+                                <action disabled="1" id="-10" name="Set value" sid="348529700381448" type="UndyneLegs">
+                                    <param id="0" name="Instance variable">XOffset</param>
+                                    <param id="1" name="Value">sign * amplitude * (UndyneLegs.TimeMarker + 1 - time)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="308278064710605">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="577372176663320" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="346839821256234" type="UndyneLegs">
+                            <param id="0" name="Instance variable">T</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="7318755130489573">
                     <conditions>
@@ -9685,6 +10123,10 @@
                             <param id="0" name="Instance variable">T</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-10" name="Set value" sid="864643361026796" type="UndyneLegs">
+                            <param id="0" name="Instance variable">T</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                         <action id="-10" name="Set value" sid="362276419509186" type="UndyneTorso">
                             <param id="0" name="Instance variable">OffsetX</param>
                             <param id="1" name="Value">0</param>
@@ -9717,6 +10159,10 @@
                             <param id="0" name="Instance variable">OffsetY</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-10" name="Set value" sid="162084245470875" type="UndyneLegs">
+                            <param id="0" name="Instance variable">XOffset</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block disabled="1" sid="7173198106602578">
@@ -9737,6 +10183,9 @@
                         <condition id="-1" name="Every tick" sid="5385421716260042" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-1" name="Set X" sid="153918962986012" type="UndyneLegs">
+                            <param id="0" name="X">324 + UndyneLegs.XOffset</param>
+                        </action>
                         <action id="-1" name="Set X" sid="689734964884583" type="UndyneTorso">
                             <param id="0" name="X">UndyneLegs.ImagePointX(&quot;Torso&quot;) + UndyneTorso.OffsetX</param>
                         </action>
@@ -9776,6 +10225,10 @@
                         <action id="-2" name="Set Y" sid="860412258792706" type="UndyneRightArm">
                             <param id="0" name="Y">UndyneLegs.ImagePointY(&quot;RightArm&quot;) + UndyneRightArm.OffsetY</param>
                         </action>
+                        <action id="-20" name="Rotate toward angle" sid="219541232754371" type="UndyneRightArm">
+                            <param id="0" name="Degrees">RotMod * dt</param>
+                            <param id="1" name="Angle">UndyneRightArm.TargetAngle</param>
+                        </action>
                         <action id="-1" name="Set X" sid="791814765276576" type="UndyneHair">
                             <param id="0" name="X">UndyneHead.ImagePointX(&quot;Hair&quot;)</param>
                         </action>
@@ -9801,6 +10254,23 @@
                             <param id="0" name="Y">UndyneHead.ImagePointY(&quot;Eyebeam&quot;)</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="206158158548744">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="888780373516645" type="UndyneSlash">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Opacity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="449327373461330" type="UndyneSlash" />
+                                <action id="14" name="Log" sid="861891387266927" type="Browser">
+                                    <param id="0" name="Type">0</param>
+                                    <param id="1" name="Message">time - UndyneSlash.T</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block disabled="1" sid="40234939767203">
                     <conditions>
@@ -9864,6 +10334,107 @@
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="126695155450263">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="414132186743215" type="PlayerHeart">
+                                    <param id="0" name="Instance variable">Mode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">HEARTMODE_GREEN</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="980461819914215">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="668288191786235" type="System">
+                                            <param id="0" name="First value">time</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">LastDamageTime + INV</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="373603573026450" type="PlayerHeart">
+                                            <param id="0" name="Instance variable">T</param>
+                                            <param id="1" name="Value">dt</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="924634022197398">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="981387471771321" type="PlayerHeart">
+                                                    <param id="0" name="Instance variable">T</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">0.133333333333</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="386649818495313" type="PlayerHeart">
+                                                    <param id="0" name="Instance variable">T</param>
+                                                    <param id="1" name="Value">0.133333333333</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="580630432749567">
+                                                    <conditions>
+                                                        <condition id="-8" name="Is boolean instance variable set" sid="197808059339768" type="PlayerHeart">
+                                                            <param id="0" name="Instance variable">dark</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-13" name="Set boolean" sid="537086727118439" type="PlayerHeart">
+                                                            <param id="0" name="Instance variable">dark</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-28" name="Set effect parameter" sid="653348705066380" type="PlayerHeart">
+                                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                                            <param id="1" name="Parameter index">1</param>
+                                                            <param id="2" name="Value">75</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="846920618377408">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="162075589200125" type="System" />
+                                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="698444359308995" type="PlayerHeart">
+                                                            <param id="0" name="Instance variable">dark</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-13" name="Set boolean" sid="903510287076831" type="PlayerHeart">
+                                                            <param id="0" name="Instance variable">dark</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-28" name="Set effect parameter" sid="698102272838536" type="PlayerHeart">
+                                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                                            <param id="1" name="Parameter index">1</param>
+                                                            <param id="2" name="Value">50</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="544860973022385">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="760149927287205" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="189739503499482" type="PlayerHeart">
+                                            <param id="0" name="Instance variable">T</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="487496301626571" type="PlayerHeart">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">75</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="6538539831904817">
                     <conditions>
@@ -9968,7 +10539,7 @@
                         <condition id="-14" name="Compare variable" sid="4220182392469211" type="System">
                             <param id="0" name="Variable">LastDamageTime</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">time-1</param>
+                            <param id="2" name="Value">time-INV</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -11122,7 +11693,7 @@
         </event-group>
         <event-group description="" sid="938476576242042" title="PlayerBlocker">
             <sub-events>
-                <variable constant="1" name="ROTATE_SPEED" sid="369338599475471" static="0" type="number">32</variable>
+                <variable constant="1" name="ROTATE_SPEED" sid="369338599475471" static="0" type="number">1920</variable>
                 <event-block sid="288648169672846">
                     <conditions>
                         <condition id="0" name="On function" sid="835853329837401" type="Function">
@@ -11134,13 +11705,16 @@
                             <param id="0" name="X">PlayerHeart.X</param>
                             <param id="1" name="Y">PlayerHeart.Y</param>
                         </action>
-                        <action id="-3" name="Set position" sid="583860992653140" type="GreenCircle">
-                            <param id="0" name="X">PlayerHeart.X</param>
-                            <param id="1" name="Y">PlayerHeart.Y</param>
-                        </action>
                         <action id="-9" name="Set value" sid="971533013667593" type="System">
                             <param id="0" name="Variable">LastInputtedAngle</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="674286353247354" type="Blocker">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="583860992653140" type="GreenCircle">
+                            <param id="0" name="X">PlayerHeart.X</param>
+                            <param id="1" name="Y">PlayerHeart.Y</param>
                         </action>
                     </actions>
                 </event-block>
@@ -11153,13 +11727,13 @@
                         <event-block sid="867527277256799">
                             <conditions>
                                 <condition id="-11" inverted="1" name="Is within angle" sid="496859438760926" type="Blocker">
-                                    <param id="0" name="Within">ROTATE_SPEED</param>
+                                    <param id="0" name="Within">ROTATE_SPEED * dt</param>
                                     <param id="1" name="Angle">LastInputtedAngle</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-20" name="Rotate toward angle" sid="113175777569727" type="Blocker">
-                                    <param id="0" name="Degrees">ROTATE_SPEED</param>
+                                    <param id="0" name="Degrees">ROTATE_SPEED * dt</param>
                                     <param id="1" name="Angle">LastInputtedAngle</param>
                                 </action>
                             </actions>

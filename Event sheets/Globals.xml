@@ -32,5 +32,6 @@
         <variable constant="0" name="one" sid="765994660346569" static="0" type="number">0</variable>
         <variable constant="0" name="two" sid="328505335201159" static="0" type="number">0</variable>
         <variable constant="0" name="three" sid="882916782472691" static="0" type="number">0</variable>
+        <variable constant="0" name="INV" sid="515385076115233" static="0" type="number">1</variable>
     </events>
 </c2eventsheet>

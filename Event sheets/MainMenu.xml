@@ -132,7 +132,7 @@
                             <param id="0" name="Scale">2</param>
                         </action>
                         <action id="0" name="Set text" sid="6017732506802038" type="UndyneFont">
-                            <param id="0" name="Text">&quot;How hard are you gonna try?&quot;</param>
+                            <param id="0" name="Text">&quot;What do you want to try?&quot;</param>
                         </action>
                         <action id="7" name="Set horizontal alignment" sid="6681899051898119" type="UndyneFont">
                             <param id="0" name="Horizontal alignment">1</param>

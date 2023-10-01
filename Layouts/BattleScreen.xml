@@ -66,7 +66,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>416</x>
+                        <x>350</x>
                         <y>400</y>
                         <z>0</z>
                         <width>128</width>
@@ -138,7 +138,7 @@
                         <x>263</x>
                         <y>402</y>
                         <z>0</z>
-                        <width>110</width>
+                        <width>72</width>
                         <height>21</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -219,7 +219,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
+                        <x>70</x>
                         <y>240</y>
                         <z>0</z>
                         <width>28</width>
@@ -241,7 +241,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>561</x>
+                        <x>570</x>
                         <y>240</y>
                         <z>0</z>
                         <width>27</width>
@@ -355,17 +355,18 @@
                         <T>0</T>
                         <OffsetX>0</OffsetX>
                         <OffsetY>0</OffsetY>
+                        <TargetAngle>0</TargetAngle>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>312</x>
+                        <x>292</x>
                         <y>77</y>
                         <z>0</z>
                         <width>92</width>
                         <height>152</height>
                         <depth>0</depth>
-                        <hotspotX>1</hotspotX>
+                        <hotspotX>0.782608688</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -412,6 +413,9 @@
                         <DodgeTimer>0</DodgeTimer>
                         <JustDodged>false</JustDodged>
                         <XSpeed>0</XSpeed>
+                        <T>0</T>
+                        <XOffset>0</XOffset>
+                        <TimeMarker>0</TimeMarker>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -703,8 +707,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>270.000152588</x>
-                        <y>513.940551758</y>
+                        <x>270</x>
+                        <y>512</y>
                         <z>0</z>
                         <width>110</width>
                         <height>21</height>
@@ -809,6 +813,8 @@
                         <Mode>0</Mode>
                         <Slammed>false</Slammed>
                         <SlamDamage>false</SlamDamage>
+                        <T>0</T>
+                        <dark>false</dark>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">

@@ -435,9 +435,9 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="Tired1" pingpong="0" repeatcount="1" repeatto="0" sid="9055351961421601" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.966667" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_sansb_face_2.png">
-                            <image-point name="Sweat" x="0.5" y="0" />
+                    <animation framecount="14" loop="0" name="Tired1" pingpong="0" repeatcount="1" repeatto="0" sid="9055351961421601" speed="5">
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.28125">
+                            <image-point name="Sweat" x="0.513514" y="0" />
                             <collision-poly>
                                 <point x="0.125" y="0.133333" />
                                 <point x="0.5" y="0" />
@@ -447,6 +447,168 @@
                                 <point x="0.5" y="1" />
                                 <point x="0.125" y="0.866667" />
                                 <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.28125">
+                            <image-point name="Sweat" x="0.513514" y="0" />
+                            <collision-poly>
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.875" y="0.866667" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.866667" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.3125" original-source="C:\Users\Sid\c2-undyne-fight\Textures\UndyneScream2.png">
+                            <collision-poly>
+                                <point x="0.216216" y="0.25" />
+                                <point x="0.486486" y="0" />
+                                <point x="0.783784" y="0.25" />
+                                <point x="0.945946" y="0.5" />
+                                <point x="0.891892" y="0.875" />
+                                <point x="0.486486" y="1" />
+                                <point x="0.108108" y="0.875" />
+                                <point x="0.0540541" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.3125">
+                            <collision-poly>
+                                <point x="0.216216" y="0.25" />
+                                <point x="0.486486" y="0" />
+                                <point x="0.783784" y="0.25" />
+                                <point x="0.945946" y="0.5" />
+                                <point x="0.891892" y="0.875" />
+                                <point x="0.486486" y="1" />
+                                <point x="0.108108" y="0.875" />
+                                <point x="0.0540541" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.3125">
+                            <collision-poly>
+                                <point x="0.216216" y="0.25" />
+                                <point x="0.486486" y="0" />
+                                <point x="0.783784" y="0.25" />
+                                <point x="0.945946" y="0.5" />
+                                <point x="0.891892" y="0.875" />
+                                <point x="0.486486" y="1" />
+                                <point x="0.108108" y="0.875" />
+                                <point x="0.0540541" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.3125">
+                            <collision-poly>
+                                <point x="0.216216" y="0.25" />
+                                <point x="0.486486" y="0" />
+                                <point x="0.783784" y="0.25" />
+                                <point x="0.945946" y="0.5" />
+                                <point x="0.891892" y="0.875" />
+                                <point x="0.486486" y="1" />
+                                <point x="0.108108" y="0.875" />
+                                <point x="0.0540541" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.28125">
+                            <image-point name="Sweat" x="0.513514" y="0" />
+                            <image-point name="Imagepoint 1" x="0.621622" y="0.28125" />
+                            <collision-poly>
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.875" y="0.866667" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.866667" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.28125">
+                            <image-point name="Sweat" x="0.621622" y="0.3125" />
+                            <collision-poly>
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.875" y="0.866667" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.866667" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.28125">
+                            <image-point name="Sweat" x="0.513514" y="0" />
+                            <collision-poly>
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.875" y="0.866667" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.866667" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.28125">
+                            <image-point name="Sweat" x="0.513514" y="0" />
+                            <collision-poly>
+                                <point x="0.125" y="0.133333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.133333" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.875" y="0.866667" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.866667" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.3125">
+                            <collision-poly>
+                                <point x="0.216216" y="0.25" />
+                                <point x="0.486486" y="0" />
+                                <point x="0.783784" y="0.25" />
+                                <point x="0.945946" y="0.5" />
+                                <point x="0.891892" y="0.875" />
+                                <point x="0.486486" y="1" />
+                                <point x="0.108108" y="0.875" />
+                                <point x="0.0540541" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.3125">
+                            <collision-poly>
+                                <point x="0.216216" y="0.25" />
+                                <point x="0.486486" y="0" />
+                                <point x="0.783784" y="0.25" />
+                                <point x="0.945946" y="0.5" />
+                                <point x="0.891892" y="0.875" />
+                                <point x="0.486486" y="1" />
+                                <point x="0.108108" y="0.875" />
+                                <point x="0.0540541" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.3125">
+                            <collision-poly>
+                                <point x="0.216216" y="0.25" />
+                                <point x="0.486486" y="0" />
+                                <point x="0.783784" y="0.25" />
+                                <point x="0.945946" y="0.5" />
+                                <point x="0.891892" y="0.875" />
+                                <point x="0.486486" y="1" />
+                                <point x="0.108108" y="0.875" />
+                                <point x="0.0540541" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.621622" hotspotY="0.3125">
+                            <collision-poly>
+                                <point x="0.216216" y="0.25" />
+                                <point x="0.486486" y="0" />
+                                <point x="0.783784" y="0.25" />
+                                <point x="0.945946" y="0.5" />
+                                <point x="0.891892" y="0.875" />
+                                <point x="0.486486" y="1" />
+                                <point x="0.108108" y="0.875" />
+                                <point x="0.0540541" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -500,6 +662,9 @@
                     <instance-variable name="DodgeTimer" sid="3509506029893432" type="number" />
                     <instance-variable name="JustDodged" sid="7696753463127348" type="boolean" />
                     <instance-variable name="XSpeed" sid="4058871107931012" type="number" />
+                    <instance-variable name="T" sid="599817226785996" type="number" />
+                    <instance-variable name="XOffset" sid="146277895435273" type="number" />
+                    <instance-variable name="TimeMarker" sid="275964094348047" type="number" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Standing" pingpong="0" repeatcount="1" repeatto="0" sid="5481948914165362" speed="5">
@@ -507,7 +672,7 @@
                             <image-point name="Torso" x="-0.325" y="-0.809524" />
                             <image-point name="Waist" x="0.9" y="-0.261905" />
                             <image-point name="Head" x="0.575" y="-5.16667" />
-                            <image-point name="RightArm" x="0.325" y="-0.928571" />
+                            <image-point name="RightArm" x="0.125" y="-0.928571" />
                             <collision-poly>
                                 <point x="0.15" y="0.142857" />
                                 <point x="0.5" y="0" />
@@ -533,10 +698,11 @@
                     <instance-variable name="T" sid="526626732011484" type="number" />
                     <instance-variable name="OffsetX" sid="965073170881691" type="number" />
                     <instance-variable name="OffsetY" sid="571800602557338" type="number" />
+                    <instance-variable name="TargetAngle" sid="807412556715932" type="number" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7107173151154428" speed="5">
-                        <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\UndyneRightArm.png">
+                        <frame duration="1" hotspotX="0.782609" hotspotY="0" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\UndyneRightArm.png">
                             <collision-poly>
                                 <point x="0.413043" y="0.25" />
                                 <point x="0.5" y="0.131579" />
@@ -1009,30 +1175,30 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="196785862414210" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\ArrowU.png">
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.481481" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\ArrowU.png">
                             <collision-poly>
-                                <point x="0.25" y="0.230769" />
-                                <point x="0.5" y="0.0769231" />
-                                <point x="0.708333" y="0.269231" />
-                                <point x="0.666667" y="0.5" />
-                                <point x="0.666667" y="0.692308" />
-                                <point x="0.5" y="1" />
-                                <point x="0.291667" y="0.730769" />
-                                <point x="0.291667" y="0.5" />
+                                <point x="0.133333" y="0.222222" />
+                                <point x="0.533333" y="0.0740741" />
+                                <point x="0.866666" y="0.259259" />
+                                <point x="0.8" y="0.481481" />
+                                <point x="0.8" y="0.666667" />
+                                <point x="0.533333" y="0.962963" />
+                                <point x="0.200001" y="0.703703" />
+                                <point x="0.200001" y="0.481481" />
                             </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Red" pingpong="0" repeatcount="1" repeatto="0" sid="383520393147878" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedUpArrow.png">
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.481481" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedUpArrow.png">
                             <collision-poly>
-                                <point x="0.25" y="0.230769" />
-                                <point x="0.5" y="0.0769231" />
-                                <point x="0.708333" y="0.269231" />
-                                <point x="0.666667" y="0.5" />
-                                <point x="0.666667" y="0.692308" />
-                                <point x="0.5" y="1" />
-                                <point x="0.291667" y="0.730769" />
-                                <point x="0.291667" y="0.5" />
+                                <point x="0.133333" y="0.222222" />
+                                <point x="0.533333" y="0.0740741" />
+                                <point x="0.866666" y="0.259259" />
+                                <point x="0.8" y="0.481481" />
+                                <point x="0.8" y="0.666667" />
+                                <point x="0.533333" y="0.962963" />
+                                <point x="0.200001" y="0.703703" />
+                                <point x="0.200001" y="0.481481" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1042,30 +1208,30 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="685192839949662" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\DownArrow.png">
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.592593" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\DownArrow.png">
                             <collision-poly>
-                                <point x="0.291667" y="0.233333" />
-                                <point x="0.5" y="0" />
-                                <point x="0.666667" y="0.266667" />
-                                <point x="0.75" y="0.5" />
-                                <point x="0.625" y="0.7" />
-                                <point x="0.5" y="0.8" />
-                                <point x="0.333333" y="0.733333" />
-                                <point x="0.208333" y="0.5" />
+                                <point x="0.200001" y="0.296296" />
+                                <point x="0.533333" y="0.037037" />
+                                <point x="0.8" y="0.333334" />
+                                <point x="0.933333" y="0.592593" />
+                                <point x="0.733333" y="0.814815" />
+                                <point x="0.533333" y="0.925926" />
+                                <point x="0.266666" y="0.851852" />
+                                <point x="0.0666661" y="0.592593" />
                             </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Red" pingpong="0" repeatcount="1" repeatto="0" sid="224170496520165" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedDownArrow.png">
+                        <frame duration="1" hotspotX="0.533333" hotspotY="0.592593" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedDownArrow.png">
                             <collision-poly>
-                                <point x="0.291667" y="0.233333" />
-                                <point x="0.5" y="0" />
-                                <point x="0.666667" y="0.266667" />
-                                <point x="0.75" y="0.5" />
-                                <point x="0.625" y="0.7" />
-                                <point x="0.5" y="0.8" />
-                                <point x="0.333333" y="0.733333" />
-                                <point x="0.208333" y="0.5" />
+                                <point x="0.200001" y="0.296296" />
+                                <point x="0.533333" y="0.037037" />
+                                <point x="0.8" y="0.333334" />
+                                <point x="0.933333" y="0.592593" />
+                                <point x="0.733333" y="0.814815" />
+                                <point x="0.533333" y="0.925926" />
+                                <point x="0.266666" y="0.851852" />
+                                <point x="0.0666661" y="0.592593" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1075,30 +1241,30 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694868594724852" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RightArrow.png">
+                        <frame duration="1" hotspotX="0.555556" hotspotY="0.6" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RightArrow.png">
                             <collision-poly>
-                                <point x="0.214286" y="0.25" />
-                                <point x="0.5" y="0.166667" />
-                                <point x="0.75" y="0.291667" />
-                                <point x="0.821429" y="0.5" />
-                                <point x="0.714286" y="0.666667" />
-                                <point x="0.5" y="0.708333" />
-                                <point x="0.321429" y="0.625" />
-                                <point x="0" y="0.5" />
+                                <point x="0.25926" y="0.2" />
+                                <point x="0.555556" y="0.0666672" />
+                                <point x="0.814815" y="0.266667" />
+                                <point x="0.888889" y="0.6" />
+                                <point x="0.777778" y="0.866667" />
+                                <point x="0.555556" y="0.933333" />
+                                <point x="0.370371" y="0.8" />
+                                <point x="0.037037" y="0.6" />
                             </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Red" pingpong="0" repeatcount="1" repeatto="0" sid="467062885764574" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedRightArrow.png">
+                        <frame duration="1" hotspotX="0.555556" hotspotY="0.6" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedRightArrow.png">
                             <collision-poly>
-                                <point x="0.214286" y="0.25" />
-                                <point x="0.5" y="0.166667" />
-                                <point x="0.75" y="0.291667" />
-                                <point x="0.821429" y="0.5" />
-                                <point x="0.714286" y="0.666667" />
-                                <point x="0.5" y="0.708333" />
-                                <point x="0.321429" y="0.625" />
-                                <point x="0" y="0.5" />
+                                <point x="0.25926" y="0.2" />
+                                <point x="0.555556" y="0.0666672" />
+                                <point x="0.814815" y="0.266667" />
+                                <point x="0.888889" y="0.6" />
+                                <point x="0.777778" y="0.866667" />
+                                <point x="0.555556" y="0.933333" />
+                                <point x="0.370371" y="0.8" />
+                                <point x="0.037037" y="0.6" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1108,30 +1274,30 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="970952810398754" speed="5">
-                        <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\LeftArrow.png">
+                        <frame duration="1" hotspotX="0.481481" hotspotY="0.6" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\LeftArrow.png">
                             <collision-poly>
-                                <point x="0.222222" y="0.25" />
-                                <point x="0.481481" y="0.166667" />
-                                <point x="0.777778" y="0.25" />
-                                <point x="1" y="0.5" />
-                                <point x="0.666667" y="0.625" />
-                                <point x="0.481481" y="0.708333" />
-                                <point x="0.296296" y="0.666667" />
-                                <point x="0.148148" y="0.5" />
+                                <point x="0.185185" y="0.2" />
+                                <point x="0.444444" y="0.0666672" />
+                                <point x="0.740741" y="0.2" />
+                                <point x="0.962963" y="0.6" />
+                                <point x="0.62963" y="0.8" />
+                                <point x="0.444444" y="0.933333" />
+                                <point x="0.259259" y="0.866667" />
+                                <point x="0.111111" y="0.6" />
                             </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Red" pingpong="0" repeatcount="1" repeatto="0" sid="305447689263250" speed="5">
-                        <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedLeftArrow.png">
+                        <frame duration="1" hotspotX="0.481481" hotspotY="0.6" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedLeftArrow.png">
                             <collision-poly>
-                                <point x="0.222222" y="0.25" />
-                                <point x="0.481481" y="0.166667" />
-                                <point x="0.777778" y="0.25" />
-                                <point x="1" y="0.5" />
-                                <point x="0.666667" y="0.625" />
-                                <point x="0.481481" y="0.708333" />
-                                <point x="0.296296" y="0.666667" />
-                                <point x="0.148148" y="0.5" />
+                                <point x="0.185185" y="0.2" />
+                                <point x="0.444444" y="0.0666672" />
+                                <point x="0.740741" y="0.2" />
+                                <point x="0.962963" y="0.6" />
+                                <point x="0.62963" y="0.8" />
+                                <point x="0.444444" y="0.933333" />
+                                <point x="0.259259" y="0.866667" />
+                                <point x="0.111111" y="0.6" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1141,16 +1307,16 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239668656141619" speed="5">
-                        <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowUpArrow.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowUpArrow.png">
                             <collision-poly>
-                                <point x="0.28" y="0.291667" />
-                                <point x="0.48" y="0.0416667" />
-                                <point x="0.72" y="0.291667" />
-                                <point x="0.68" y="0.5" />
-                                <point x="0.68" y="0.666667" />
-                                <point x="0.48" y="0.958333" />
-                                <point x="0.36" y="0.625" />
-                                <point x="0.36" y="0.5" />
+                                <point x="0.0714286" y="0.291667" />
+                                <point x="0.428571" y="0.0416667" />
+                                <point x="0.857143" y="0.291667" />
+                                <point x="0.785714" y="0.5" />
+                                <point x="0.785714" y="0.666667" />
+                                <point x="0.428571" y="0.958333" />
+                                <point x="0.214286" y="0.625" />
+                                <point x="0.214286" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1160,15 +1326,15 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="681828122932922" speed="5">
-                        <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowDownArrow.png">
+                        <frame duration="1" hotspotX="0.571429" hotspotY="0.619048" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowDownArrow.png">
                             <collision-poly>
-                                <point x="0.48" y="0" />
-                                <point x="0.64" y="0.375" />
-                                <point x="0.72" y="0.5" />
-                                <point x="0.68" y="0.666667" />
-                                <point x="0.48" y="0.791667" />
-                                <point x="0.32" y="0.666667" />
-                                <point x="0.24" y="0.5" />
+                                <point x="0.5" y="0.047619" />
+                                <point x="0.785714" y="0.47619" />
+                                <point x="0.928571" y="0.619048" />
+                                <point x="0.857143" y="0.809524" />
+                                <point x="0.5" y="0.952381" />
+                                <point x="0.214286" y="0.809524" />
+                                <point x="0.0714286" y="0.619048" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1178,16 +1344,16 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131579907403878" speed="5">
-                        <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowLeftArrow.png">
+                        <frame duration="1" hotspotX="0.458333" hotspotY="0.571429" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowLeftArrow.png">
                             <collision-poly>
-                                <point x="0.28" y="0.291667" />
-                                <point x="0.48" y="0.208333" />
-                                <point x="0.72" y="0.291667" />
-                                <point x="1" y="0.5" />
-                                <point x="0.64" y="0.625" />
-                                <point x="0.48" y="0.708333" />
-                                <point x="0.32" y="0.666667" />
-                                <point x="0.16" y="0.5" />
+                                <point x="0.208333" y="0.214286" />
+                                <point x="0.416667" y="0.071428" />
+                                <point x="0.666667" y="0.214286" />
+                                <point x="0.958333" y="0.571429" />
+                                <point x="0.583333" y="0.785714" />
+                                <point x="0.416667" y="0.928571" />
+                                <point x="0.25" y="0.857143" />
+                                <point x="0.0833333" y="0.571429" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1197,16 +1363,16 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="987148544779097" speed="5">
-                        <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowRightArrow.png">
+                        <frame duration="1" hotspotX="0.608696" hotspotY="0.571429" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\YellowRightArrow.png">
                             <collision-poly>
-                                <point x="0.28" y="0.291667" />
-                                <point x="0.48" y="0.208333" />
-                                <point x="0.72" y="0.291667" />
-                                <point x="1" y="0.5" />
-                                <point x="0.64" y="0.625" />
-                                <point x="0.48" y="0.708333" />
-                                <point x="0.32" y="0.666667" />
-                                <point x="0.16" y="0.5" />
+                                <point x="0.347826" y="0.214286" />
+                                <point x="0.565217" y="0.071428" />
+                                <point x="0.826087" y="0.214286" />
+                                <point x="1" y="0.571429" />
+                                <point x="0.73913" y="0.785714" />
+                                <point x="0.565217" y="0.928571" />
+                                <point x="0.391304" y="0.857143" />
+                                <point x="0.217391" y="0.571429" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1243,6 +1409,14 @@
             <object-type name="DamageFont" sid="501546311307215">
                 <plugin id="Spritefont2" />
                 <texture original-source="C:\Users\Jcw87\Pictures\UndertaleDamageFont.png" />
+            </object-type>
+            <object-type name="SpriteFont" sid="328881028157402">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\Sid\c2-undyne-fight\Textures\UndyneTextFont.png" />
+            </object-type>
+            <object-type name="UndyneFont2" sid="880848179649442">
+                <plugin id="Spritefont2" />
+                <texture original-source="C:\Users\Sid\c2-undyne-fight\Textures\UndyneTextFont.png" />
             </object-type>
         </object-folder>
         <object-folder name="TouchUI">
@@ -1369,6 +1543,8 @@
                     <instance-variable name="Mode" sid="6313592074891908" type="number" />
                     <instance-variable name="Slammed" sid="4448468745440906" type="boolean" />
                     <instance-variable name="SlamDamage" sid="122041775148508" type="boolean" />
+                    <instance-variable name="T" sid="930287223231363" type="number" />
+                    <instance-variable name="dark" sid="663642377225289" type="boolean" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="CustomMovement" sid="8958058217944609">
@@ -1557,6 +1733,187 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Spear" sid="721116636011743">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869887836847152" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\UndyneSpear.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.1" />
+                            <point x="0.75" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.9" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UndyneSlash" sid="858728823653864">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="T" sid="901556484622163" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="967425680502548" speed="5">
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedSlash.png">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\GreenSlash.png">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UndyneSlashProjectile" sid="291466918976087">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="T" sid="308495374918047" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193708750423959" speed="5">
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedSlash.png">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\GreenSlash.png">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="BoneStab" plugin-id="NinePatch" sid="9321183475132962">
@@ -1589,6 +1946,7 @@
                 <member>DamageFont</member>
                 <member>SansFont</member>
                 <member>UndyneFont</member>
+                <member>UndyneFont2</member>
             </members>
             <instance-variables>
                 <instance-variable name="Name" sid="8126938230629388" type="string" />
@@ -1679,6 +2037,7 @@
             <instance-variables>
                 <instance-variable name="Direction" sid="197290466367887" type="number" />
                 <instance-variable name="Speed" sid="987199403945304" type="number" />
+                <instance-variable name="TimeMarker" sid="535457089372525" type="number" />
             </instance-variables>
         </family>
         <family name="RArrowSprite" plugin-id="Sprite" sid="427990459672234">

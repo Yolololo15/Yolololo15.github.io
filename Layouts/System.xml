@@ -1057,7 +1057,7 @@
                         <character-height>16</character-height>
                         <character-set> !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</character-set>
                         <text>Informational Text</text>
-                        <scale>1</scale>
+                        <scale>1.5</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1091,8 +1091,8 @@
                         <x>16</x>
                         <y>206</y>
                         <z>0</z>
-                        <width>208</width>
-                        <height>16</height>
+                        <width>270.587860107</width>
+                        <height>24.247680664</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -1110,6 +1110,7 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <TimeMarker>0</TimeMarker>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1117,13 +1118,13 @@
                         <x>427</x>
                         <y>150</y>
                         <z>0</z>
-                        <width>24</width>
-                        <height>26</height>
+                        <width>15</width>
+                        <height>27</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.481481493</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.25</opacity>
                     </world>
                 </instance>
                 <instance type="ArrowD" uid="70">
@@ -1136,6 +1137,7 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <TimeMarker>0</TimeMarker>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1143,13 +1145,13 @@
                         <x>453</x>
                         <y>150</y>
                         <z>0</z>
-                        <width>24</width>
-                        <height>30</height>
+                        <width>15</width>
+                        <height>27</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.533333361</hotspotX>
+                        <hotspotY>0.592592597</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.25</opacity>
                     </world>
                 </instance>
                 <instance type="ArrowL" uid="71">
@@ -1162,6 +1164,7 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <TimeMarker>0</TimeMarker>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1170,12 +1173,12 @@
                         <y>150</y>
                         <z>0</z>
                         <width>27</width>
-                        <height>24</height>
+                        <height>15</height>
                         <depth>0</depth>
-                        <hotspotX>0.518518507</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.481481493</hotspotX>
+                        <hotspotY>0.600000024</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.25</opacity>
                     </world>
                 </instance>
                 <instance type="ArrowR" uid="72">
@@ -1188,6 +1191,7 @@
                     <instance-variables>
                         <Direction>0</Direction>
                         <Speed>0</Speed>
+                        <TimeMarker>0</TimeMarker>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1195,13 +1199,13 @@
                         <x>513</x>
                         <y>150</y>
                         <z>0</z>
-                        <width>28</width>
-                        <height>24</height>
+                        <width>27</width>
+                        <height>15</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.555555582</hotspotX>
+                        <hotspotY>0.600000024</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.25</opacity>
                     </world>
                 </instance>
                 <instance type="RArrowD" uid="77">
@@ -1228,13 +1232,13 @@
                         <x>453</x>
                         <y>183</y>
                         <z>0</z>
-                        <width>25</width>
+                        <width>14</width>
                         <height>24</height>
                         <depth>0</depth>
-                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.25</opacity>
                     </world>
                 </instance>
                 <instance type="RArrowU" uid="78">
@@ -1261,13 +1265,13 @@
                         <x>427</x>
                         <y>183</y>
                         <z>0</z>
-                        <width>25</width>
-                        <height>24</height>
+                        <width>14</width>
+                        <height>21</height>
                         <depth>0</depth>
-                        <hotspotX>0.519999981</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.571428597</hotspotX>
+                        <hotspotY>0.619047642</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.25</opacity>
                     </world>
                 </instance>
                 <instance type="RArrowR" uid="79">
@@ -1294,13 +1298,13 @@
                         <x>513</x>
                         <y>183</y>
                         <z>0</z>
-                        <width>25</width>
-                        <height>24</height>
+                        <width>24</width>
+                        <height>14</height>
                         <depth>0</depth>
-                        <hotspotX>0.519999981</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.458333343</hotspotX>
+                        <hotspotY>0.571428597</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.25</opacity>
                     </world>
                 </instance>
                 <instance type="RArrowL" uid="80">
@@ -1327,13 +1331,13 @@
                         <x>482</x>
                         <y>183</y>
                         <z>0</z>
-                        <width>25</width>
-                        <height>24</height>
+                        <width>23</width>
+                        <height>14</height>
                         <depth>0</depth>
-                        <hotspotX>0.519999981</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.608695626</hotspotX>
+                        <hotspotY>0.571428597</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.25</opacity>
                     </world>
                 </instance>
                 <instance type="TargetChoice2" uid="84">
@@ -1384,6 +1388,78 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Spear" uid="89">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>610.000854492</x>
+                        <y>144.546615601</y>
+                        <z>0</z>
+                        <width>24</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UndyneSlash" uid="90">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <T>0</T>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>500</x>
+                        <y>275</y>
+                        <z>0</z>
+                        <width>303</width>
+                        <height>135</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501650155</hotspotX>
+                        <hotspotY>0.503703713</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UndyneSlashProjectile" uid="88">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <T>0</T>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>500</x>
+                        <y>275</y>
+                        <z>0</z>
+                        <width>303</width>
+                        <height>135</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501650155</hotspotX>
+                        <hotspotY>0.503703713</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
