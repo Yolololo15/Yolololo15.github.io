@@ -6399,6 +6399,7 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="178491350772234" title="SpinningSpears" />
         <event-group description="" sid="6115443361825044" title="Bones">
             <sub-events>
                 <event-block sid="4695619220070591">
@@ -9050,7 +9051,7 @@
                             <param id="0" name="Object to create">UndyneSlashProjectile</param>
                             <param id="1" name="Layer">5</param>
                             <param id="2" name="X">UndyneSlash.X</param>
-                            <param id="3" name="Y">UndyneSlash.Y</param>
+                            <param id="3" name="Y">UndyneSlash.Y + 15</param>
                         </action>
                         <action id="4" name="Set animation" sid="890575024216587" type="UndyneSlash">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
@@ -9078,6 +9079,7 @@
                             <param id="0" name="Name">&quot;CenterBlockerHide&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
+                        <action id="-9" name="Destroy" sid="690399060369263" type="ArrowSprite" />
                     </actions>
                 </event-block>
                 <event-block sid="139405627395192">
@@ -10265,6 +10267,21 @@
                             <actions>
                                 <action id="-9" name="Destroy" sid="449327373461330" type="UndyneSlash" />
                                 <action id="14" name="Log" sid="861891387266927" type="Browser">
+                                    <param id="0" name="Type">0</param>
+                                    <param id="1" name="Message">time - UndyneSlash.T</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="194546291156757">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="256686018134584" type="UndyneSlashProjectile">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Opacity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="597093920916248" type="UndyneSlashProjectile" />
+                                <action id="14" name="Log" sid="909279373767515" type="Browser">
                                     <param id="0" name="Type">0</param>
                                     <param id="1" name="Message">time - UndyneSlash.T</param>
                                 </action>

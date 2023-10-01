@@ -616,11 +616,11 @@
                         <x>16</x>
                         <y>224</y>
                         <z>0</z>
-                        <width>237</width>
-                        <height>104</height>
+                        <width>214</width>
+                        <height>106</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>-0.112149529</hotspotX>
+                        <hotspotY>0.009433962</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1392,7 +1392,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Spear" uid="89">
+                <instance type="SpinningSpear" uid="89">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1402,8 +1402,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>610.000854492</x>
-                        <y>144.546615601</y>
+                        <x>600</x>
+                        <y>150</y>
                         <z>0</z>
                         <width>24</width>
                         <height>60</height>
@@ -1427,7 +1427,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>500</x>
+                        <x>450</x>
                         <y>275</y>
                         <z>0</z>
                         <width>303</width>
@@ -1452,7 +1452,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>500</x>
+                        <x>450</x>
                         <y>275</y>
                         <z>0</z>
                         <width>303</width>

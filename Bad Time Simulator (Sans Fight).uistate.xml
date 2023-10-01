@@ -51,7 +51,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/TouchUI/" />
         <folder expanded="1" path="object-folder/Misc/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
@@ -104,7 +104,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/HeartShard/" />
         <folder expanded="1" path="animation-folder/PlayerHitbox/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Spear/" />
+        <folder expanded="1" path="animation-folder/SpinningSpear/" />
         <folder expanded="1" path="animation-folder/UndyneSlash/" />
         <folder expanded="1" path="animation-folder/UndyneSlashProjectile/" />
     </folders-expanded>

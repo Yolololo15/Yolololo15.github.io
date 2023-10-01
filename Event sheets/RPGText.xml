@@ -284,7 +284,7 @@
                             <param id="3" name="Y">0</param>
                         </action>
                         <action id="-1" name="Set X" sid="473467616022563" type="SpeechBubble">
-                            <param id="0" name="X">UndyneLegs.X + 64</param>
+                            <param id="0" name="X">UndyneLegs.X + 58</param>
                         </action>
                         <action id="-2" name="Set Y" sid="263588128954958" type="SpeechBubble">
                             <param id="0" name="Y">UndyneLegs.Y - 224</param>

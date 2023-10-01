@@ -761,15 +761,15 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4563758704400881" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_blconwdshrt_0.png">
+                        <frame duration="1" hotspotX="-0.11215" hotspotY="0.00943396" original-source="C:\Users\Jcw87\Documents\Undertale Rip\Sprites\spr_blconwdshrt_0.png">
                             <collision-poly>
-                                <point x="0.105485" y="0.240385" />
-                                <point x="0.49789" y="0" />
-                                <point x="0.970464" y="0.0673077" />
-                                <point x="1" y="0.5" />
-                                <point x="0.974684" y="0.942308" />
-                                <point x="0.49789" y="1" />
-                                <point x="0.105485" y="0.759615" />
+                                <point x="0.00467264" y="0.245283" />
+                                <point x="0.439252" y="0.00943396" />
+                                <point x="0.962617" y="0.0754717" />
+                                <point x="0.995327" y="0.5" />
+                                <point x="0.96729" y="0.933963" />
+                                <point x="0.439252" y="0.990566" />
+                                <point x="0.00467264" y="0.754717" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1733,7 +1733,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Spear" sid="721116636011743">
+        <object-type name="SpinningSpear" sid="721116636011743">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869887836847152" speed="5">
@@ -1838,8 +1838,20 @@
                 <instance-variable name="T" sid="308495374918047" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193708750423959" speed="5">
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193708750423959" speed="5">
                     <frame duration="1" hotspotX="0.50165" hotspotY="0.503704" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\RedSlash.png">
+                        <collision-poly>
+                            <point x="0.0759076" y="0.17037" />
+                            <point x="0.49835" y="0.651852" />
+                            <point x="0.729373" y="0.607407" />
+                            <point x="0.907591" y="0.496296" />
+                            <point x="0.917492" y="0.814815" />
+                            <point x="0.49835" y="0.948148" />
+                            <point x="0.188119" y="0.577778" />
+                            <point x="0.161716" y="0.496296" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50165" hotspotY="0.503704">
                         <collision-poly>
                             <point x="0.0759076" y="0.17037" />
                             <point x="0.49835" y="0.651852" />
