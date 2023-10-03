@@ -28,6 +28,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
@@ -102,6 +103,19 @@
             </object-type>
             <object-type name="Touch" sid="833371787328053">
                 <plugin id="Touch" />
+            </object-type>
+            <object-type name="Camera" sid="209025639041519">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="757113726603525">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696392518061991" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="BattleUI">
@@ -1735,9 +1749,20 @@
         </object-type>
         <object-type name="SpinningSpear" sid="721116636011743">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="spinning" sid="372338060513061" type="boolean" />
+                <instance-variable name="rotspeed" sid="798458311106801" type="number" />
+                <instance-variable name="timeMarker" sid="173853288979507" type="number" />
+                <instance-variable name="speed" sid="328237839372909" type="number" />
+            </instance-variables>
+            <effects>
+                <effect-type name="Tint">
+                    <effect id="tint" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869887836847152" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\undyne-construct-2\Assets\Spritesheets\UndyneSpear.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Sid\c2-undyne-fight\Textures\ArrowNoOutline.png">
                         <collision-poly>
                             <point x="0.25" y="0.1" />
                             <point x="0.5" y="0" />
@@ -2080,6 +2105,11 @@
             <instance-variables>
                 <instance-variable name="Stopped" sid="576032247617867" type="boolean" />
             </instance-variables>
+        </family>
+        <family name="SpinningSpearFamily" plugin-id="Sprite" sid="125412905357936">
+            <members>
+                <member>SpinningSpear</member>
+            </members>
         </family>
     </families>
     <layout-folder>

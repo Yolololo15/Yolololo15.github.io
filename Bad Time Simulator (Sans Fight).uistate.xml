@@ -19,7 +19,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="5">AttackLoader</event-sheet>
         <event-sheet order="6">Timeline</event-sheet>
         <event-sheet order="7">Menus</event-sheet>
-        <event-sheet order="11">Fonts</event-sheet>
+        <event-sheet order="10">Fonts</event-sheet>
+        <event-sheet order="11">MainMenu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -39,24 +40,26 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="ArrowSprite" />
         <family expanded="1" name="RArrowSprite" />
         <family expanded="1" name="TargetChoice" />
+        <family expanded="1" name="SpinningSpearFamily" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/Singletons/" />
+        <folder expanded="1" path="object-folder/Singletons/" />
         <folder expanded="0" path="object-folder/BattleUI/" />
         <folder expanded="0" path="object-folder/Enemies/" />
         <folder expanded="0" path="object-folder/Attacks/" />
         <folder expanded="0" path="object-folder/Timeline/" />
         <folder expanded="0" path="object-folder/Fonts/" />
         <folder expanded="0" path="object-folder/TouchUI/" />
-        <folder expanded="1" path="object-folder/Misc/" />
+        <folder expanded="0" path="object-folder/Misc/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/VPad/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
         <folder expanded="1" path="animation-folder/UIAct/" />
         <folder expanded="1" path="animation-folder/UIFight/" />
         <folder expanded="1" path="animation-folder/UIItem/" />

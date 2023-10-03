@@ -1483,6 +1483,16 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="981184195227188">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="212451337695638" type="System">
+                                    <param id="0" name="Object">SpinningSpear</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="275055287630801" type="SpinningSpear" />
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="9880305470005524">
@@ -6399,7 +6409,274 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="178491350772234" title="SpinningSpears" />
+        <event-group description="" sid="178491350772234" title="SpinningSpears">
+            <sub-events>
+                <variable constant="0" name="hoffset" sid="116463723510644" static="0" type="number">65</variable>
+                <variable constant="0" name="voffset" sid="764604661027631" static="0" type="number">40</variable>
+                <variable constant="0" name="extravoffset" sid="657059924083523" static="0" type="number">30</variable>
+                <variable constant="0" name="extrahoffset" sid="548115402246009" static="0" type="number">15</variable>
+                <variable constant="0" name="spintime" sid="280541068363096" static="0" type="number">1</variable>
+                <variable constant="0" name="acceleration" sid="677659659598384" static="0" type="number">0.075</variable>
+                <event-block sid="520540525575250">
+                    <conditions>
+                        <condition id="0" name="On function" sid="729299027319227" type="Function">
+                            <param id="0" name="Name">&quot;SpinningSpear&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="724882573995415" type="System">
+                            <param id="0" name="Object to create">SpinningSpear</param>
+                            <param id="1" name="Layer">5</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <variable constant="0" name="rand" sid="753099851613398" static="0" type="number">0</variable>
+                        <event-block sid="860462968830903">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="413790276491171" type="System">
+                                    <param id="0" name="Variable">rand</param>
+                                    <param id="1" name="Value">floor(random(0,4))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="962155456242665">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="940402567304911" type="System">
+                                    <param id="0" name="First value">rand</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="167087952778017" type="SpinningSpear">
+                                    <param id="0" name="X">round(random(CombatZone.TargetLeft-extrahoffset, CombatZone.TargetRight+hoffset+extrahoffset))</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="322278153158297" type="SpinningSpear">
+                                    <param id="0" name="Y">round(random(CombatZone.TargetTop-voffset-extravoffset,CombatZone.TargetTop-extravoffset))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="619829024830419">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="978339875546956" type="System" />
+                                <condition id="-8" name="Compare two values" sid="827161670218642" type="System">
+                                    <param id="0" name="First value">rand</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="189602797111552" type="SpinningSpear">
+                                    <param id="0" name="X">round(random(CombatZone.TargetRight+extrahoffset,CombatZone.TargetRight+hoffset+extrahoffset))</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="824995933781775" type="SpinningSpear">
+                                    <param id="0" name="Y">round(random(CombatZone.TargetTop-extravoffset, CombatZone.TargetBottom+voffset+extravoffset))</param>
+                                </action>
+                                <action disabled="1" id="-28" name="Set effect parameter" sid="890493062331529" type="SpinningSpear">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="284150028699976">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="956084564092588" type="System" />
+                                <condition id="-8" name="Compare two values" sid="361468401581832" type="System">
+                                    <param id="0" name="First value">rand</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="138351566425015" type="SpinningSpear">
+                                    <param id="0" name="X">round(random(CombatZone.TargetLeft-hoffset-extrahoffset,CombatZone.TargetRight+extrahoffset))</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="828231665917500" type="SpinningSpear">
+                                    <param id="0" name="Y">round(random(CombatZone.TargetBottom+extravoffset, CombatZone.TargetBottom+voffset+extravoffset))</param>
+                                </action>
+                                <action disabled="1" id="-28" name="Set effect parameter" sid="960735772156593" type="SpinningSpear">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="905738453560797">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="593227750671345" type="System" />
+                                <condition id="-8" name="Compare two values" sid="807071004320867" type="System">
+                                    <param id="0" name="First value">rand</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="180573962823675" type="SpinningSpear">
+                                    <param id="0" name="X">round(random(CombatZone.TargetLeft-hoffset-extrahoffset,CombatZone.TargetLeft-extrahoffset))</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="399125075671061" type="SpinningSpear">
+                                    <param id="0" name="Y">round(random(CombatZone.TargetTop-voffset-extravoffset, CombatZone.TargetBottom+extravoffset))</param>
+                                </action>
+                                <action disabled="1" id="-28" name="Set effect parameter" sid="880796593168602" type="SpinningSpear">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="541591665777999">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="545042301228224" type="SpinningSpear">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="752800594962160" type="SpinningSpear">
+                                    <param id="0" name="Instance variable">timeMarker</param>
+                                    <param id="1" name="Value">time</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="297866231582090" type="SpinningSpear">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action id="14" name="Log" sid="111898136396418" type="Browser">
+                                    <param id="0" name="Type">0</param>
+                                    <param id="1" name="Message">rand</param>
+                                </action>
+                                <action id="14" name="Log" sid="421431073690131" type="Browser">
+                                    <param id="0" name="Type">0</param>
+                                    <param id="1" name="Message">SpinningSpear.X</param>
+                                </action>
+                                <action id="14" name="Log" sid="162933903177916" type="Browser">
+                                    <param id="0" name="Type">0</param>
+                                    <param id="1" name="Message">SpinningSpear.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="269170015108342">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="943630667124858" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="153844430280839">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="992784165648877" type="System">
+                                    <param id="0" name="Object">SpinningSpear</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="766519165524026">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="262427225112206" type="SpinningSpear">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="917811101750964" type="SpinningSpear">
+                                            <param id="0" name="Opacity">SpinningSpear.Opacity + 45 * dt</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="881489096147478">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="429959394514148" type="SpinningSpear">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Opacity">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="953182494050714" type="SpinningSpear">
+                                            <param id="0" name="Opacity">SpinningSpear.Opacity + 45 * dt</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="236066375636505">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="699478137043683" type="SpinningSpear">
+                                            <param id="0" name="Instance variable">spinning</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="300392708473519" type="SpinningSpear">
+                                            <param id="0" name="Instance variable">rotspeed</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-18" name="Rotate clockwise" sid="364008810026146" type="SpinningSpear">
+                                            <param id="0" name="Degrees">SpinningSpear.rotspeed * dt</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="629645907973994" type="SpinningSpear">
+                                            <param id="0" name="Instance variable">rotspeed</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="742596282813697">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="573628460665697" type="SpinningSpear">
+                                            <param id="0" name="Instance variable">spinning</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="900648822623015" type="SpinningSpear">
+                                            <param id="0" name="Instance variable">timeMarker</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">time-spintime</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="180526895166199" type="SpinningSpear">
+                                            <param id="0" name="Instance variable">spinning</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-22" name="Set angle toward position" sid="901886687778453" type="SpinningSpear">
+                                            <param id="0" name="X">PlayerHitbox.X</param>
+                                            <param id="1" name="Y">PlayerHitbox.Y</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="531444239303257" type="SpinningSpear">
+                                            <param id="0" name="Degrees">90</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="690219764215247">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="683660258528909" type="SpinningSpear">
+                                            <param id="0" name="Instance variable">spinning</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="353566452066371" type="SpinningSpear">
+                                            <param id="0" name="Instance variable">speed</param>
+                                            <param id="1" name="Value">acceleration</param>
+                                        </action>
+                                        <action id="-23" name="Move at angle" sid="320468159859088" type="SpinningSpear">
+                                            <param id="0" name="Angle">SpinningSpear.Angle-90</param>
+                                            <param id="1" name="Distance">SpinningSpear.speed</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="577314388634999">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="136719328248281" type="SpinningSpear">
+                                            <param id="0" name="Instance variable">spinning</param>
+                                        </condition>
+                                        <condition id="-3" inverted="1" name="Is on-screen" sid="185504179965761" type="SpinningSpear" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="669870196742057" type="SpinningSpear" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="6115443361825044" title="Bones">
             <sub-events>
                 <event-block sid="4695619220070591">
@@ -10451,6 +10728,135 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="937941344606718">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="396289695616808" type="PlayerHeart">
+                                    <param id="0" name="Instance variable">Mode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">HEARTMODE_RED</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="707918636741423">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="233675607925030" type="System">
+                                            <param id="0" name="First value">time</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">LastDamageTime + INV</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="138102970106064" type="PlayerHeart">
+                                            <param id="0" name="Instance variable">T</param>
+                                            <param id="1" name="Value">dt</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="117302014786331">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="345264512226457" type="PlayerHeart">
+                                                    <param id="0" name="Instance variable">T</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">0.133333333333</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="162849605795534" type="PlayerHeart">
+                                                    <param id="0" name="Instance variable">T</param>
+                                                    <param id="1" name="Value">0.133333333333</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="287294911656851">
+                                                    <conditions>
+                                                        <condition id="-8" name="Is boolean instance variable set" sid="258621388545884" type="PlayerHeart">
+                                                            <param id="0" name="Instance variable">dark</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-13" name="Set boolean" sid="373963580588817" type="PlayerHeart">
+                                                            <param id="0" name="Instance variable">dark</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-28" name="Set effect parameter" sid="787398392408334" type="PlayerHeart">
+                                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                                            <param id="1" name="Parameter index">0</param>
+                                                            <param id="2" name="Value">100</param>
+                                                        </action>
+                                                        <action id="-28" name="Set effect parameter" sid="878702061923942" type="PlayerHeart">
+                                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                                            <param id="1" name="Parameter index">1</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-28" name="Set effect parameter" sid="544691621568197" type="PlayerHeart">
+                                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                                            <param id="1" name="Parameter index">2</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="238888120524508">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="461520220933736" type="System" />
+                                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="242912909801889" type="PlayerHeart">
+                                                            <param id="0" name="Instance variable">dark</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-13" name="Set boolean" sid="729562595617767" type="PlayerHeart">
+                                                            <param id="0" name="Instance variable">dark</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-28" name="Set effect parameter" sid="118736212198086" type="PlayerHeart">
+                                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                                            <param id="1" name="Parameter index">0</param>
+                                                            <param id="2" name="Value">50</param>
+                                                        </action>
+                                                        <action id="-28" name="Set effect parameter" sid="520444260493507" type="PlayerHeart">
+                                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                                            <param id="1" name="Parameter index">1</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-28" name="Set effect parameter" sid="146091301875103" type="PlayerHeart">
+                                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                                            <param id="1" name="Parameter index">2</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="600927318130278">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="523874655557354" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="362286993565020" type="PlayerHeart">
+                                            <param id="0" name="Instance variable">T</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="234009108334484" type="PlayerHeart">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">100</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="633951885511216" type="PlayerHeart">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="263311857892977" type="PlayerHeart">
+                                            <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="6538539831904817">
@@ -10464,21 +10870,39 @@
                             <param id="0" name="Variable">LastDamageTime</param>
                             <param id="1" name="Value">time</param>
                         </action>
-                        <action id="-11" name="Subtract from" sid="5063548360071409" type="System">
-                            <param id="0" name="Variable">HP</param>
-                            <param id="1" name="Value">Function.Param(0)</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="622917796290428" type="System">
-                            <param id="0" name="Variable">KR</param>
-                            <param id="1" name="Value">Function.Param(1)</param>
-                        </action>
-                        <action id="0" name="Play" sid="2718447344361586" type="Audio">
-                            <param id="0" name="Audio file">PlayerDamaged</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="850572219136495">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="350043215917208" type="PlayerHeart">
+                                    <param id="0" name="Instance variable">Mode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">-1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="723279604327633" type="Camera">
+                                    <param id="0" name="Magnitude">7.5</param>
+                                    <param id="1" name="Duration">0.1</param>
+                                    <param id="2" name="Mode">1</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="5063548360071409" type="System">
+                                    <param id="0" name="Variable">HP</param>
+                                    <param id="1" name="Value">Function.Param(0)</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="622917796290428" type="System">
+                                    <param id="0" name="Variable">KR</param>
+                                    <param id="1" name="Value">Function.Param(1)</param>
+                                </action>
+                                <action id="0" name="Play" sid="2718447344361586" type="Audio">
+                                    <param id="0" name="Audio file">PlayerDamaged</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="9017895024442913">
                     <conditions>
@@ -10698,11 +11122,24 @@
                                 <action id="-15" name="Set visible" sid="558535626496238" type="ArrowSprite">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
-                                <action id="0" name="Call function" sid="563486525064111" type="Function">
+                                <action id="0" name="Call function" sid="602868727046824" type="Function">
                                     <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
-                                    <param id="1" name="Parameter {n}">12{###}0</param>
+                                    <param id="1" name="Parameter {n}">floor(random(8,13)){###}0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="652642678954240" type="ArrowSprite" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="816484137405095">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="992998733694341" type="PlayerHitbox">
+                                    <param id="0" name="Object">SpinningSpear</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="952088389382418" type="Function">
+                                    <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
+                                    <param id="1" name="Parameter {n}">floor(random(8,13)){###}0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="337607546950141">
@@ -10715,9 +11152,9 @@
                                 <action id="-15" name="Set visible" sid="440853529059057" type="RArrowSprite">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
-                                <action id="0" name="Call function" sid="184383963591997" type="Function">
+                                <action id="0" name="Call function" sid="144667984567034" type="Function">
                                     <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
-                                    <param id="1" name="Parameter {n}">12{###}0</param>
+                                    <param id="1" name="Parameter {n}">floor(random(8,13)){###}0</param>
                                 </action>
                                 <action id="14" name="Log" sid="252737909603087" type="Browser">
                                     <param id="0" name="Type">0</param>

@@ -32,32 +32,32 @@
                             <param id="1" name="Value">&quot;sans_bonegap2&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="2069748953422304" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="2069748953422304" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_boneslideh&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="5059129090672449" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="5059129090672449" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_boneslidev&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="375272527352408" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="375272527352408" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_bonestab1&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="4170005015431915" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="4170005015431915" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_bonestab2&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="1011321954321543" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="1011321954321543" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_bonestab3&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="9768700699396818" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="9768700699396818" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_final&quot;</param>
                             <param id="2" name="Axis">0</param>
@@ -67,27 +67,27 @@
                             <param id="1" name="Value">&quot;sans_intro&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="3391111219319787" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="3391111219319787" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_multi1&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="8132783675693353" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="8132783675693353" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_multi2&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="8935044343984921" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="8935044343984921" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_multi3&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="9455036665125524" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="9455036665125524" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_platformblaster&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="6647189041973594" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="6647189041973594" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_platformblasterfast&quot;</param>
                             <param id="2" name="Axis">0</param>
@@ -97,37 +97,37 @@
                             <param id="1" name="Value">&quot;sans_platforms1&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="7745298823847402" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="7745298823847402" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_platforms2&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="1260174120863198" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="1260174120863198" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_platforms3&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="8766372860492814" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="8766372860492814" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_platforms4&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="9777307155362394" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="9777307155362394" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_platforms4hard&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="904902605703142" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="904902605703142" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_randomblaster1&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="2951841823605826" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="2951841823605826" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_randomblaster2&quot;</param>
                             <param id="2" name="Axis">0</param>
                         </action>
-                        <action id="5" name="Push" sid="7956789796541343" type="AttackLoader">
+                        <action disabled="1" id="5" name="Push" sid="7956789796541343" type="AttackLoader">
                             <param id="0" name="Where">0</param>
                             <param id="1" name="Value">&quot;sans_spare&quot;</param>
                             <param id="2" name="Axis">0</param>
